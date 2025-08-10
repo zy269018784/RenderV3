@@ -1,0 +1,55 @@
+# This file is a template, and might need editing before it works on your project.
+# To contribute improvements to CI/CD templates, please follow the Development guide at:
+# https://docs.gitlab.com/ee/development/cicd/templates.html
+# This specific template is located at:
+# https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Getting-Started.gitlab-ci.yml
+
+# This is a sample GitLab CI/CD configuration file that should run without any modifications.
+# It demonstrates a basic 3 stage CI/CD pipeline. Instead of real tests or scripts,
+# it uses echo commands to simulate the pipeline execution.
+#
+# A pipeline is composed of independent jobs that run scripts, grouped into stages.
+# Stages run in sequential order, but jobs within stages run in parallel.
+#
+# For more information, see: https://docs.gitlab.com/ee/ci/yaml/index.html#stages
+image: 192.168.3.203:30002/pointcode-common/pointcode-3d-make:latest
+stages:          # List of stages for jobs, and their order of execution
+  - build
+  - test
+  - deploy
+
+build-job:       # This job runs in the build stage, which runs first.
+  image: 192.168.3.203:30002/pointcode-common/pointcode-3d-make:latest
+  stage: build
+  tags:
+    - runInDockerNode
+  allow_failure: false
+  only:
+    # 只有master分支触发
+    - main
+  when: # 手动触发
+    manual
+  artifacts: #产物对应的输出路径（这个会保存在产线当中，需要重新构建后才会覆盖掉）
+    paths:
+      - build/
+  script:
+    - echo "Compiling the code..."
+    - cd pbrt-v4-build/pbrt-v4
+    - mkdir build
+    - cmake ..
+    - make
+    - echo "Compile complete."
+deploy-job:      # This job runs in the deploy stage.
+  image: docker:dind
+  stage: deploy  # It only runs when *both* jobs in the test stage complete successfully.
+  only:
+    # 只有master分支触发
+    - main
+  when: # 手动触发
+    manual
+  tags: #
+    - runInDockerNode
+  allow_failure: false
+  script:
+    - echo "Deploying application..."
+    - echo "Application successfully deployed."

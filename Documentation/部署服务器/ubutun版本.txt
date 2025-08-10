@@ -1,0 +1,2 @@
+ubuntu-22.04.2-desktop-amd64.iso 可以装cuda-11.8, 	  不能装vulkan.
+ubuntu-24.04.2-desktop-amd64.iso 不能可以装cuda-11.8, 可以能装vulkan

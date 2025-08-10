@@ -1,0 +1,148 @@
+# 面砖
+
+# 乐华浅豆沙白天工石C02
+Texture "tile-lehua-II-225-C02" "spectrum" "imagemap"
+    "string filename" [ "material/Tiles/textures/tile-lehua-II-225-C02-texture.jpg" ]
+Texture "tile-lehua-II-225-C02_normal" "spectrum" "imagemap"
+    "string filename" [ "material/Tiles/textures/tile-lehua-II-225-C02-normal.jpg" ]
+MakeNamedMaterial "tile-lehua-II-225-C02"
+    "string type" [ "conductor"]
+    "string reflectance" [ "tile-lehua-II-225-C02"]
+    "string normalmap" [ "tile-lehua-II-225-C02_normal"]
+    "float uroughness" 0.800000
+    "float vroughness" 0.800000
+    "float reflectivity" 0.000000
+    "float eta" 1.500000
+	
+
+# 乐华寒山灰天工石C05
+Texture "tile-lehua-II-225-C05" "spectrum" "imagemap"
+    "string filename" [ "material/Tiles/textures/tile-lehua-II-225-C05-texture.jpg" ]
+Texture "tile-lehua-II-225-C05_normal" "spectrum" "imagemap"
+    "string filename" [ "material/Tiles/textures/tile-lehua-II-225-C05-normal.jpg" ]
+MakeNamedMaterial "tile-lehua-II-225-C05"
+    "string type" [ "conductor"]
+    "string reflectance" [ "tile-lehua-II-225-C05"]
+    "string normalmap" [ "tile-lehua-II-225-C05_normal"]
+    "float uroughness" 0.800000
+    "float vroughness" 0.800000
+    "float reflectivity" 0.000000
+    "float eta" 1.500000
+	
+
+# 乐华茶拓棕天工石C04
+Texture "tile-lehua-II-225-C04" "spectrum" "imagemap"
+    "string filename" [ "material/Tiles/textures/tile-lehua-II-225-C04-texture.jpg" ]
+Texture "tile-lehua-II-225-C04_normal" "spectrum" "imagemap"
+    "string filename" [ "material/Tiles/textures/tile-lehua-II-225-C04-normal.jpg" ]
+MakeNamedMaterial "tile-lehua-II-225-C04"
+    "string type" [ "conductor"]
+    "string reflectance" [ "tile-lehua-II-225-C04"]
+    "string normalmap" [ "tile-lehua-II-225-C04_normal"]
+    "float uroughness" 0.800000
+    "float vroughness" 0.800000
+    "float reflectivity" 0.000000
+    "float eta" 1.500000
+
+# 乐华椰子灰WJ-277-886
+Texture "tile-lehua-WJ-277-886" "spectrum" "imagemap"
+    "string filename" [ "material/Tiles/textures/tile-lehua-WJ-277-886-texture.jpg" ]
+Texture "tile-lehua-WJ-277-886_normal" "spectrum" "imagemap"
+    "string filename" [ "material/Tiles/textures/tile-lehua-WJ-277-886-normal.jpg" ]
+MakeNamedMaterial "tile-lehua-WJ-277-886"
+    "string type" [ "conductor"]
+    "string reflectance" [ "tile-lehua-WJ-277-886"]
+    "string normalmap" [ "tile-lehua-WJ-277-886_normal"]
+    "float uroughness" 0.800000
+    "float vroughness" 0.800000
+    "float reflectivity" 0.000000
+    "float eta" 1.500000
+
+# 乐华沙滩米黄WJ-277-881
+Texture "tile-lehua-WJ-277-881" "spectrum" "imagemap"
+    "string filename" [ "material/Tiles/textures/tile-lehua-WJ-277-881-texture.jpg" ]
+Texture "tile-lehua-WJ-277-881_normal" "spectrum" "imagemap"
+    "string filename" [ "material/Tiles/textures/tile-lehua-WJ-277-881-normal.jpg" ]
+MakeNamedMaterial "tile-lehua-WJ-277-881"
+    "string type" [ "conductor"]
+    "string reflectance" [ "tile-lehua-WJ-277-881"]
+    "string normalmap" [ "tile-lehua-WJ-277-881_normal"]
+    "float uroughness" 0.800000
+    "float vroughness" 0.800000
+    "float reflectivity" 0.000000
+    "float eta" 1.500000
+	
+	
+
+# 乐华象牙白天工石C01
+Texture "tile-lehua-II-225-C01" "spectrum" "imagemap"
+    "string filename" [ "material/Tiles/textures/tile-lehua-II-225-C01-texture.jpg" ]
+Texture "tile-lehua-II-225-C01_normal" "spectrum" "imagemap"
+    "string filename" [ "material/Tiles/textures/tile-lehua-II-225-C01-normal.jpg" ]
+MakeNamedMaterial "tile-lehua-II-225-C01"
+    "string type" [ "conductor"]
+    "string reflectance" [ "tile-lehua-II-225-C01"]
+    "string normalmap" [ "tile-lehua-II-225-C01_normal"]
+    "float uroughness" 0.800000
+    "float vroughness" 0.800000
+    "float reflectivity" 0.000000
+    "float eta" 1.500000
+
+
+# 乐华如意棕WJ-277-884
+Texture "tile-lehua-WJ-277-884" "spectrum" "imagemap"
+    "string filename" [ "material/Tiles/textures/tile-lehua-WJ-277-884-texture.jpg" ]
+Texture "tile-lehua-WJ-277-884_normal" "spectrum" "imagemap"
+    "string filename" [ "material/Tiles/textures/tile-lehua-WJ-277-884-normal.jpg" ]
+MakeNamedMaterial "tile-lehua-WJ-277-884"
+    "string type" [ "conductor"]
+    "string reflectance" [ "tile-lehua-WJ-277-884"]
+    "string normalmap" [ "tile-lehua-WJ-277-884_normal"]
+    "float uroughness" 0.800000
+    "float vroughness" 0.800000
+    "float reflectivity" 0.000000
+    "float eta" 1.500000
+	
+	
+
+# 灰色现代风格面砖
+Texture "SDF-4_ENA-01" "spectrum" "imagemap"
+    "string filename" [ "material/Tiles/textures/SDF-4_ENA-01-texture.jpg" ]
+Texture "SDF-4_ENA-01_normal" "spectrum" "imagemap"
+    "string filename" [ "material/Tiles/textures/SDF-4_ENA-01-normal.jpg" ]
+MakeNamedMaterial "SDF-4_ENA-01"
+    "string type" [ "conductor"]
+    "string reflectance" [ "SDF-4_ENA-01"]
+    "string normalmap" [ "SDF-4_ENA-01_normal"]
+    "float uroughness" 0.5
+    "float vroughness" 0.5
+    "float eta" 1.5
+
+# 乐华沉思棕WJ-277-885
+Texture "tile-lehua-WJ-277-885" "spectrum" "imagemap"
+    "string filename" [ "material/Tiles/textures/tile-lehua-WJ-277-885-texture.jpg" ]
+Texture "tile-lehua-WJ-277-885_normal" "spectrum" "imagemap"
+    "string filename" [ "material/Tiles/textures/tile-lehua-WJ-277-885-normal.jpg" ]
+MakeNamedMaterial "tile-lehua-WJ-277-885"
+    "string type" [ "conductor"]
+    "string reflectance" [ "tile-lehua-WJ-277-885"]
+    "string normalmap" [ "tile-lehua-WJ-277-885_normal"]
+    "float uroughness" 0.800000
+    "float vroughness" 0.800000
+    "float reflectivity" 0.000000
+    "float eta" 1.500000
+
+# 乐华还原烧地砖HF-300
+Texture "tile-lehua-HF-300" "spectrum" "imagemap"
+    "string filename" [ "material/Tiles/textures/tile-lehua-HF-300-texture.jpg" ]
+Texture "tile-lehua-HF-300_normal" "spectrum" "imagemap"
+    "string filename" [ "material/Tiles/textures/tile-lehua-HF-300-normal.jpg" ]
+MakeNamedMaterial "tile-lehua-HF-300"
+    "string type" [ "conductor"]
+    "string reflectance" [ "tile-lehua-HF-300"]
+    "string normalmap" [ "tile-lehua-HF-300_normal"]
+    "float uroughness" 0.800000
+    "float vroughness" 0.800000
+    "float reflectivity" 0.000000
+    "float eta" 1.500000
+

@@ -1,0 +1,16 @@
+Include "TestDistantLight/camera.pbrt"
+Include "TestDistantLight/light.pbrt"
+Include "TestDistantLight/material.pbrt"
+Include "TestDistantLight/shape.pbrt"
+Include "TestDistantLight/object.pbrt"
+Include "TestDistantLight/instance.pbrt"
+Include "TestDistantLight/sky.pbrt"
+
+Integrator "test"
+Film "rgb"
+	"string filename" [ "glass.png" ]
+	"integer xresolution" [ 1920 ]
+	"integer yresolution" [ 1080 ]
+	
+	
+

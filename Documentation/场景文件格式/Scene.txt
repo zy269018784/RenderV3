@@ -1,0 +1,74 @@
+textures:
+{
+	
+}
+
+materials:
+{
+	{
+		
+	}
+}
+
+
+meshes:
+{
+	"name : mesh1"
+	"name : mesh2"
+	"name : mesh3"
+}
+
+
+objects:
+{
+	{
+		ObjectName: "building"
+		meshes: [
+			0, 1, 2
+		] 
+		uvScale: { 1.3, 0.5}
+		material: 0
+	}
+	
+	{
+		ObjectName: "building2"
+		Meshes: [
+			4, 5, 6
+		] 
+		Material: 1
+	}
+}
+
+instances
+{
+	{
+		matrix: 
+		object: 0
+	}
+	
+	{
+		matrix: 
+		object: 1
+	}
+}
+
+Sky
+{
+	filename: "1.exr"
+}
+
+Output
+{
+	filename: "scene/default.png"
+	width: 1920
+	height: 1080
+	"integer tonemapType" [ 1 ]
+	"float gamma" [ 3.5 ]
+	"float exposure" [ 1.5 ]
+}
+
+
+-----------------------------------------------------
+
+shader里有instance id
+

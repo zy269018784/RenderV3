@@ -1,0 +1,27 @@
+Texture "HDR_TEXTURE" "spectrum" "imagemap"
+	"string filename" "TestGlassMaterial/sky/table_mountain_2_puresky_8k.exr"
+LightSource "hdr"
+	"float power" [1]
+	"string reflectance" "HDR_TEXTURE"
+	"float phi" [90]
+	"float theta" [0]
+
+LightSource "distant"
+	"point3 from" [ 0	 1  	1 	 ]
+	"point3 to"   [ 0 	 0      0 		 ]
+	"float power" [ 0.1 ]
+	"float rgb" [ 1 0 0   ]			
+
+
+LightSource "distant"
+	"point3 from" [ 0	 1  	1 	 ]
+	"point3 to"   [ 0 	 0      0 		 ]
+	"float power" [ 0.1 ]
+	"float rgb" [ 0 1 0 ]			
+
+
+LightSource "distant"
+	"point3 from" [ 0	 1  	1 	 ]
+	"point3 to"   [ 0 	 0      0 		 ]
+	"float power" [ 0.1 ]
+	"float rgb" [ 0 0 1  ]			

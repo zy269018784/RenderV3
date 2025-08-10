@@ -1,0 +1,335 @@
+# 陶瓷
+
+# 和特自然面桃木心棕
+Texture "ceramic-hede-zrm-tmxz-00" "spectrum" "imagemap"
+    "string filename" [ "material/Ceramic/textures/ceramic-hede-zrm-tmxz-00-texture.jpg" ]
+MakeNamedMaterial "ceramic-hede-zrm-tmxz-00"
+    "string type" [ "conductor"]
+    "string reflectance" [ "ceramic-hede-zrm-tmxz-00"]
+    "float uroughness" 0.500000
+    "float vroughness" 0.500000
+    "float reflectivity" 0.050000
+    "float eta" 1.500000
+	
+# 米白色陶板AJ-01	
+Texture "ANJU-TB-WHITE00" "spectrum" "imagemap"
+    "string filename" [ "material/Ceramic/textures/ANJU-TB-WHITE00-texture.jpg" ]
+MakeNamedMaterial "ANJU-TB-WHITE00"
+    "string type" [ "conductor"]
+    "string reflectance" [ "ANJU-TB-WHITE00"]
+    "float uroughness" 0.800000
+    "float vroughness" 0.800000
+    "float reflectivity" 0.000000
+    "float eta" 1.500000	
+
+
+# 红色陶砖AJ-01
+Texture "ANJU-TZ-RED00" "spectrum" "imagemap"
+    "string filename" [ "material/Ceramic/textures/ANJU-TZ-RED00-texture.jpg" ]
+Texture "ANJU-TZ-RED00_normal" "spectrum" "imagemap"
+    "string filename" [ "material/Ceramic/textures/ANJU-TZ-RED00-normal.jpg" ]
+MakeNamedMaterial "ANJU-TZ-RED00"
+    "string type" [ "conductor"]
+    "string reflectance" [ "ANJU-TZ-RED00"]
+    "string normalmap" [ "ANJU-TZ-RED00_normal"]
+    "float uroughness" 0.800000
+    "float vroughness" 0.800000
+    "float reflectivity" 0.000000
+    "float eta" 1.500000
+
+# 和特自然面橡叶棕
+Texture "ceramic-hede-zrm-xyz-00" "spectrum" "imagemap"
+    "string filename" [ "material/Ceramic/textures/ceramic-hede-zrm-xyz-00-texture.jpg" ]
+MakeNamedMaterial "ceramic-hede-zrm-xyz-00"
+    "string type" [ "conductor"]
+    "string reflectance" [ "ceramic-hede-zrm-xyz-00"]
+    "float uroughness" 0.500000
+    "float vroughness" 0.500000
+    "float reflectivity" 0.050000
+    "float eta" 1.500000
+
+# 和特釉面芝士白
+Texture "ceramic-hede-ym-zsb-00" "spectrum" "imagemap"
+    "string filename" [ "material/Ceramic/textures/ceramic-hede-ym-zsb-00-texture.jpg" ]
+MakeNamedMaterial "ceramic-hede-ym-zsb-00"
+    "string type" [ "conductor"]
+    "string reflectance" [ "ceramic-hede-ym-zsb-00"]
+    "float uroughness" 0.200000
+    "float vroughness" 0.200000
+    "float reflectivity" 0.250000
+    "float eta" 1.500000
+
+# 和特自然面沙米白
+Texture "ceramic-hede-zrm-smb-00" "spectrum" "imagemap"
+    "string filename" [ "material/Ceramic/textures/ceramic-hede-zrm-smb-00-texture.jpg" ]
+MakeNamedMaterial "ceramic-hede-zrm-smb-00"
+    "string type" [ "conductor"]
+    "string reflectance" [ "ceramic-hede-zrm-smb-00"]
+    "float uroughness" 0.500000
+    "float vroughness" 0.500000
+    "float reflectivity" 0.050000
+    "float eta" 1.500000
+
+# 和特自然面可可褐
+Texture "ceramic-hede-zrm-kkh-00" "spectrum" "imagemap"
+    "string filename" [ "material/Ceramic/textures/ceramic-hede-zrm-kkh-00-texture.jpg" ]
+MakeNamedMaterial "ceramic-hede-zrm-kkh-00"
+    "string type" [ "conductor"]
+    "string reflectance" [ "ceramic-hede-zrm-kkh-00"]
+    "float uroughness" 0.500000
+    "float vroughness" 0.500000
+    "float reflectivity" 0.050000
+    "float eta" 1.500000
+
+
+# 和特釉面迷雾棕
+Texture "ceramic-hede-ym-mwz-00" "spectrum" "imagemap"
+    "string filename" [ "material/Ceramic/textures/ceramic-hede-ym-mwz-00-texture.jpg" ]
+MakeNamedMaterial "ceramic-hede-ym-mwz-00"
+    "string type" [ "conductor"]
+    "string reflectance" [ "ceramic-hede-ym-mwz-00"]
+    "float uroughness" 0.200000
+    "float vroughness" 0.200000
+    "float reflectivity" 0.250000
+    "float eta" 1.500000
+
+# 和特粗糙面香料棕
+Texture "ceramic-hede-ccm-xlz-00" "spectrum" "imagemap"
+    "string filename" [ "material/Ceramic/textures/ceramic-hede-ccm-xlz-00-texture.jpg" ]
+MakeNamedMaterial "ceramic-hede-ccm-xlz-00"
+    "string type" [ "conductor"]
+    "string reflectance" [ "ceramic-hede-ccm-xlz-00"]
+    "float uroughness" 0.800000
+    "float vroughness" 0.800000
+    "float reflectivity" 0.000000
+    "float eta" 1.500000
+
+# 和特裂纹釉面香料黄
+Texture "ceramic-hede-lwym-xlh-00" "spectrum" "imagemap"
+    "string filename" [ "material/Ceramic/textures/ceramic-hede-lwym-xlh-00-texture.jpg" ]
+MakeNamedMaterial "ceramic-hede-lwym-xlh-00"
+    "string type" [ "conductor"]
+    "string reflectance" [ "ceramic-hede-lwym-xlh-00"]
+    "float uroughness" 0.200000
+    "float vroughness" 0.200000
+    "float reflectivity" 0.250000
+    "float eta" 1.500000
+
+# 和特自然面杏子灰白
+Texture "ceramic-hede-zrm-xzhb-00" "spectrum" "imagemap"
+    "string filename" [ "material/Ceramic/textures/ceramic-hede-zrm-xzhb-00-texture.jpg" ]
+MakeNamedMaterial "ceramic-hede-zrm-xzhb-00"
+    "string type" [ "conductor"]
+    "string reflectance" [ "ceramic-hede-zrm-xzhb-00"]
+    "float uroughness" 0.500000
+    "float vroughness" 0.500000
+    "float reflectivity" 0.050000
+    "float eta" 1.500000
+	
+# 和特粗糙面鸾尾黑
+Texture "ceramic-hede-ccm-lwh-00" "spectrum" "imagemap"
+    "string filename" [ "material/Ceramic/textures/ceramic-hede-ccm-lwh-00-texture.jpg" ]
+MakeNamedMaterial "ceramic-hede-ccm-lwh-00"
+    "string type" [ "conductor"]
+    "string reflectance" [ "ceramic-hede-ccm-lwh-00"]
+    "float uroughness" 0.800000
+    "float vroughness" 0.800000
+    "float reflectivity" 0.000000
+    "float eta" 1.500000	
+
+# 和特釉面墨黑
+Texture "ceramic-hede-ym-mh-00" "spectrum" "imagemap"
+    "string filename" [ "material/Ceramic/textures/ceramic-hede-ym-mh-00-texture.jpg" ]
+MakeNamedMaterial "ceramic-hede-ym-mh-00"
+    "string type" [ "conductor"]
+    "string reflectance" [ "ceramic-hede-ym-mh-00"]
+    "float uroughness" 0.200000
+    "float vroughness" 0.200000
+    "float reflectivity" 0.250000
+    "float eta" 1.500000
+
+# 和特自然面深褐
+Texture "ceramic-hede-zrm-sh-00" "spectrum" "imagemap"
+    "string filename" [ "material/Ceramic/textures/ceramic-hede-zrm-sh-00-texture.jpg" ]
+MakeNamedMaterial "ceramic-hede-zrm-sh-00"
+    "string type" [ "conductor"]
+    "string reflectance" [ "ceramic-hede-zrm-sh-00"]
+    "float uroughness" 0.500000
+    "float vroughness" 0.500000
+    "float reflectivity" 0.050000
+    "float eta" 1.500000
+	
+# 和特釉面雾茶棕
+Texture "ceramic-hede-ym-wcz-00" "spectrum" "imagemap"
+    "string filename" [ "material/Ceramic/textures/ceramic-hede-ym-wcz-00-texture.jpg" ]
+MakeNamedMaterial "ceramic-hede-ym-wcz-00"
+    "string type" [ "conductor"]
+    "string reflectance" [ "ceramic-hede-ym-wcz-00"]
+    "float uroughness" 0.200000
+    "float vroughness" 0.200000
+    "float reflectivity" 0.250000
+    "float eta" 1.500000
+
+# 和特自然面蓝山咖啡
+Texture "ceramic-hede-zrm-lskf-00" "spectrum" "imagemap"
+    "string filename" [ "material/Ceramic/textures/ceramic-hede-zrm-lskf-00-texture.jpg" ]
+MakeNamedMaterial "ceramic-hede-zrm-lskf-00"
+    "string type" [ "conductor"]
+    "string reflectance" [ "ceramic-hede-zrm-lskf-00"]
+    "float uroughness" 0.500000
+    "float vroughness" 0.500000
+    "float reflectivity" 0.050000
+    "float eta" 1.500000
+
+# 和特粗糙面胡桃木褐
+Texture "ceramic-hede-ccm-htmh-00" "spectrum" "imagemap"
+    "string filename" [ "material/Ceramic/textures/ceramic-hede-ccm-htmh-00-texture.jpg" ]
+MakeNamedMaterial "ceramic-hede-ccm-htmh-00"
+    "string type" [ "conductor"]
+    "string reflectance" [ "ceramic-hede-ccm-htmh-00"]
+    "float uroughness" 0.800000
+    "float vroughness" 0.800000
+    "float reflectivity" 0.000000
+    "float eta" 1.500000	
+	
+# 和特釉面陈年朱	
+Texture "ceramic-hede-htym-cnz-00" "spectrum" "imagemap"
+    "string filename" [ "material/Ceramic/textures/ceramic-hede-htym-cnz-00-texture.jpg" ]
+MakeNamedMaterial "ceramic-hede-htym-cnz-00"
+    "string type" [ "conductor"]
+    "string reflectance" [ "ceramic-hede-htym-cnz-00"]
+    "float uroughness" 0.200000
+    "float vroughness" 0.200000
+    "float reflectivity" 0.250000
+    "float eta" 1.500000	
+	
+# 和特粗糙面栗褐	
+Texture "ceramic-hede-ccm-lh-00" "spectrum" "imagemap"
+    "string filename" [ "material/Ceramic/textures/ceramic-hede-ccm-lh-00-texture.jpg" ]
+MakeNamedMaterial "ceramic-hede-ccm-lh-00"
+    "string type" [ "conductor"]
+    "string reflectance" [ "ceramic-hede-ccm-lh-00"]
+    "float uroughness" 0.800000
+    "float vroughness" 0.800000
+    "float reflectivity" 0.000000
+    "float eta" 1.500000
+
+# 和特自然面格林那达棕
+Texture "ceramic-hede-zrm-glndz-00" "spectrum" "imagemap"
+    "string filename" [ "material/Ceramic/textures/ceramic-hede-zrm-glndz-00-texture.jpg" ]
+MakeNamedMaterial "ceramic-hede-zrm-glndz-00"
+    "string type" [ "conductor"]
+    "string reflectance" [ "ceramic-hede-zrm-glndz-00"]
+    "float uroughness" 0.500000
+    "float vroughness" 0.500000
+    "float reflectivity" 0.050000
+    "float eta" 1.500000
+
+# 和特粗糙面焦糖棕
+Texture "ceramic-hede-ccm-jtz-00" "spectrum" "imagemap"
+    "string filename" [ "material/Ceramic/textures/ceramic-hede-ccm-jtz-00-texture.jpg" ]
+MakeNamedMaterial "ceramic-hede-ccm-jtz-00"
+    "string type" [ "conductor"]
+    "string reflectance" [ "ceramic-hede-ccm-jtz-00"]
+    "float uroughness" 0.800000
+    "float vroughness" 0.800000
+    "float reflectivity" 0.000000
+    "float eta" 1.500000
+	
+# 米白色陶板AJ-02
+Texture "ANJU-TB-WHITE01" "spectrum" "imagemap"
+    "string filename" [ "material/Ceramic/textures/ANJU-TB-WHITE01-texture.jpg" ]
+MakeNamedMaterial "ANJU-TB-WHITE01"
+    "string type" [ "conductor"]
+    "string reflectance" [ "ANJU-TB-WHITE01"]
+    "float uroughness" 0.800000
+    "float vroughness" 0.800000
+    "float reflectivity" 0.000000
+    "float eta" 1.500000
+
+# 和特釉面梨黄	
+Texture "ceramic-hede-ym-lh-00" "spectrum" "imagemap"
+    "string filename" [ "material/Ceramic/textures/ceramic-hede-ym-lh-00-texture.jpg" ]
+MakeNamedMaterial "ceramic-hede-ym-lh-00"
+    "string type" [ "conductor"]
+    "string reflectance" [ "ceramic-hede-ym-lh-00"]
+    "float uroughness" 0.200000
+    "float vroughness" 0.200000
+    "float reflectivity" 0.250000
+    "float eta" 1.500000	
+
+# 红色陶砖AJ-02
+Texture "ANJU-TZ-RED01" "spectrum" "imagemap"
+    "string filename" [ "material/Ceramic/textures/ANJU-TZ-RED01-texture.jpg" ]
+MakeNamedMaterial "ANJU-TZ-RED01"
+    "string type" [ "conductor"]
+    "string reflectance" [ "ANJU-TZ-RED01"]
+    "float uroughness" 0.800000
+    "float vroughness" 0.800000
+    "float reflectivity" 0.000000
+    "float eta" 1.500000
+
+# 米白色陶砖AJ-02
+Texture "ANJU-TZ-WHITE01" "spectrum" "imagemap"
+    "string filename" [ "material/Ceramic/textures/ANJU-TZ-WHITE01-texture.jpg" ]
+MakeNamedMaterial "ANJU-TZ-WHITE01"
+    "string type" [ "conductor"]
+    "string reflectance" [ "ANJU-TZ-WHITE01"]
+    "float uroughness" 0.800000
+    "float vroughness" 0.800000
+    "float reflectivity" 0.000000
+    "float eta" 1.500000
+	
+# 和特自然面坚果棕
+Texture "ceramic-hede-zrm-jgz-00" "spectrum" "imagemap"
+    "string filename" [ "material/Ceramic/textures/ceramic-hede-zrm-jgz-00-texture.jpg" ]
+MakeNamedMaterial "ceramic-hede-zrm-jgz-00"
+    "string type" [ "conductor"]
+    "string reflectance" [ "ceramic-hede-zrm-jgz-00"]
+    "float uroughness" 0.500000
+    "float vroughness" 0.500000
+    "float reflectivity" 0.050000
+    "float eta" 1.500000
+
+# 和特粗糙面卡其布棕
+Texture "ceramic-hede-ccm-kqbz-00" "spectrum" "imagemap"
+    "string filename" [ "material/Ceramic/textures/ceramic-hede-ccm-kqbz-00-texture.jpg" ]
+MakeNamedMaterial "ceramic-hede-ccm-kqbz-00"
+    "string type" [ "conductor"]
+    "string reflectance" [ "ceramic-hede-ccm-kqbz-00"]
+    "float uroughness" 0.800000
+    "float vroughness" 0.800000
+    "float reflectivity" 0.000000
+    "float eta" 1.500000
+
+# 和特皮革纹陶泥棕
+Texture "ceramic-hede-pgw-tnz-00" "spectrum" "imagemap"
+    "string filename" [ "material/Ceramic/textures/ceramic-hede-pgw-tnz-00-texture.jpg" ]
+MakeNamedMaterial "ceramic-hede-pgw-tnz-00"
+    "string type" [ "conductor"]
+    "string reflectance" [ "ceramic-hede-pgw-tnz-00"]
+    "float uroughness" 0.500000
+    "float vroughness" 0.500000
+    "float reflectivity" 0.050000
+    "float eta" 1.500000
+
+# 和特釉面波西米亚蓝
+Texture "ceramic-hede-ym-bxmyl-00" "spectrum" "imagemap"
+    "string filename" [ "material/Ceramic/textures/ceramic-hede-ym-bxmyl-00-texture.jpg" ]
+MakeNamedMaterial "ceramic-hede-ym-bxmyl-00"
+    "string type" [ "conductor"]
+    "string reflectance" [ "ceramic-hede-ym-bxmyl-00"]
+    "float uroughness" 0.200000
+    "float vroughness" 0.200000
+    "float reflectivity" 0.250000
+    "float eta" 1.500000	
+
+
+
+
+
+
+
+
+	
+	

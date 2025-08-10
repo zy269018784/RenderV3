@@ -1,0 +1,18 @@
+Include "TestTilesMaterial/camera.pbrt"
+Include "TestTilesMaterial/light.pbrt"
+Include "TestTilesMaterial/material.pbrt"
+Include "material/material.pbrt"
+
+Include "TestTilesMaterial/shape.pbrt"
+Include "TestTilesMaterial/object.pbrt"
+Include "TestTilesMaterial/instance.pbrt"
+Include "TestTilesMaterial/sky.pbrt"
+
+Integrator "test"
+Film "rgb"
+	"string filename" [ "glass.png" ]
+	"integer xresolution" [ 1920 ]
+	"integer yresolution" [ 1080 ]
+	
+	
+

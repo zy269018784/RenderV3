@@ -1,0 +1,17 @@
+apt install openssh-server
+
+允许 SSH 通过防火墙:
+	ufw allow OpenSSH
+
+启用防火墙:	
+	ufw enable	
+	
+	
+允许root登录:	
+	vim /etc/ssh/sshd_config
+	PermitRootLogin yes
+	
+	
+	
+	
+	

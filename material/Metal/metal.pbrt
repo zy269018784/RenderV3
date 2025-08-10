@@ -1,0 +1,537 @@
+# 金属
+
+# 紫砂银金属色铝板
+Texture "AC80005_III" "spectrum" "const"
+        "float rgb" [ 0.580392 0.505882 0.450980 ]
+MakeNamedMaterial "AC80005_III"
+        "string type" [ "conductor"]
+        "string reflectance" [ "AC80005_III" ]        
+        "float uroughness" 0.04
+        "float vroughness" 0.04
+		
+# 玫瑰红金属色铝板
+Texture "AC40025_III" "spectrum" "const"
+        "float rgb" [ 0.513725 0.400000 0.282353 ]
+MakeNamedMaterial "AC40025_III"
+        "string type" [ "conductor"]
+        "string reflectance" [ "AC40025_III" ]        
+        "float uroughness" 0.04
+        "float vroughness" 0.04
+
+# 香槟金格栅AJ-02
+Texture "ANJU-LGS-CHAMGOLD01" "spectrum" "const" 
+    "float rgb" [ 0.752941 0.717647 0.682353 ]
+MakeNamedMaterial "ANJU-LGS-CHAMGOLD01"
+    "string type" [ "conductor"]
+    "string reflectance" [ "ANJU-LGS-CHAMGOLD01"]
+    "float uroughness" 0.040000
+    "float vroughness" 0.040000
+
+# 富士银灰金属色铝板
+Texture "AC50344_III" "spectrum" "const"
+        "float rgb" [ 0.282353 0.329412 0.345098 ]
+MakeNamedMaterial "AC50344_III"
+        "string type" [ "conductor"]
+        "string reflectance" [ "AC50344_III" ]        
+        "float uroughness" 0.04
+        "float vroughness" 0.04	
+
+# 青水湾银金属色铝板
+Texture "AC30017_III" "spectrum" "const"
+        "float rgb" [ 0.572549 0.639216 0.505882 ]
+MakeNamedMaterial "AC30017_III"
+        "string type" [ "conductor"]
+        "string reflectance" [ "AC30017_III" ]        
+        "float uroughness" 0.07
+        "float vroughness" 0.07
+
+# 闪银铝板-TSD-457E
+Texture "TSD_KM2T-4457E" "spectrum" "const" 
+    "float rgb" [ 0.796078 0.792157 0.745098 ]
+MakeNamedMaterial "TSD_KM2T-4457E"
+    "string type" [ "conductor"]
+    "string reflectance" [ "TSD_KM2T-4457E"]
+    "float uroughness" 0.040000
+    "float vroughness" 0.040000
+
+# 黑银铝板-TSD-1119	
+Texture "TSD_629-91119" "spectrum" "const" 
+    "float rgb" [ 0.403922 0.403922 0.372549 ]
+MakeNamedMaterial "TSD_629-91119"
+    "string type" [ "conductor"]
+    "string reflectance" [ "TSD_629-91119"]
+    "float uroughness" 0.160000
+    "float vroughness" 0.160000
+
+# 黑银铝板-TSD-764F
+Texture "TSD_KM2T-44764F" "spectrum" "const" 
+    "float rgb" [ 0.250980 0.247059 0.231373 ]
+MakeNamedMaterial "TSD_KM2T-44764F"
+    "string type" [ "conductor"]
+    "string reflectance" [ "TSD_KM2T-44764F"]
+    "float uroughness" 0.160000
+    "float vroughness" 0.160000
+
+# 梦幻金金属色铝板
+Texture "AC60282_III" "spectrum" "const"
+        "float rgb" [ 0.580392 0.552941 0.392157 ]
+MakeNamedMaterial "AC60282_III"
+        "string type" [ "conductor"]
+        "string reflectance" [ "AC60282_III" ]        
+        "float uroughness" 0.01
+        "float vroughness" 0.01
+
+# 闪银灰色铝板YX-01						
+Texture "yuexiu_lb_hf3t32185" "spectrum" "const" 
+    "float rgb" [ 0.807843 0.807843 0.807843 ]
+MakeNamedMaterial "yuexiu_lb_hf3t32185"
+    "string type" [ "conductor"]
+    "string reflectance" [ "yuexiu_lb_hf3t32185"]
+    "float uroughness" 0.040000
+    "float vroughness" 0.040000
+
+# 黑银铝板-TSD-135F
+Texture "TSD_KM2T-44135F" "spectrum" "const" 
+    "float rgb" [ 0.384314 0.384314 0.356863 ]
+MakeNamedMaterial "TSD_KM2T-44135F"
+    "string type" [ "conductor"]
+    "string reflectance" [ "TSD_KM2T-44135F"]
+    "float uroughness" 0.040000
+    "float vroughness" 0.040000
+	
+# 闪银铝板-TSD-2185
+Texture "TSD_HF3T32185" "spectrum" "const" 
+    "float rgb" [ 0.772549 0.752941 0.705882 ]
+MakeNamedMaterial "TSD_HF3T32185"
+    "string type" [ "conductor"]
+    "string reflectance" [ "TSD_HF3T32185"]
+    "float uroughness" 0.040000
+    "float vroughness" 0.040000	
+	
+# 古铜氟碳漆铝板-YY2
+Texture "GTFTQLB-YY2" "spectrum" "const"
+        "float rgb" [ 0.235294 0.203922 0.160784 ]
+MakeNamedMaterial "GTFTQLB-YY2"
+        "string type" [ "conductor"]
+        "string reflectance" [ "GTFTQLB-YY2" ]        
+        "float uroughness" 0.01
+        "float vroughness" 0.01
+
+# 水墨蓝金属色铝板		
+Texture "AC90049_III" "spectrum" "const"
+        "float rgb" [ 0.313725 0.329412 0.341176 ]
+MakeNamedMaterial "AC90049_III"
+        "string type" [ "conductor"]
+        "string reflectance" [ "AC90049_III" ]        
+        "float uroughness" 0.07
+        "float vroughness" 0.07
+
+# 晨雾银灰金属色铝板
+Texture "AC50341_III" "spectrum" "const"
+        "float rgb" [ 0.349020 0.345098 0.286275 ]
+MakeNamedMaterial "AC50341_III"
+        "string type" [ "conductor"]
+        "string reflectance" [ "AC50341_III" ]        
+        "float uroughness" 0.04
+        "float vroughness" 0.04		
+	
+# 深灰色铝型材AJ-03	
+Texture "ANJU-LXC-GREY02" "spectrum" "const" 
+    "float rgb" [ 0.337255 0.349020 0.345098 ]
+MakeNamedMaterial "ANJU-LXC-GREY02"
+    "string type" [ "conductor"]
+    "string reflectance" [ "ANJU-LXC-GREY02"]
+    "float uroughness" 0.040000
+    "float vroughness" 0.040000	
+	
+# 月光银金属色铝板	
+Texture "AC10277_III" "spectrum" "const"
+        "float rgb" [ 0.498039 0.498039 0.498039 ]
+MakeNamedMaterial "AC10277_III"
+        "string type" [ "conductor"]
+        "string reflectance" [ "AC10277_III" ]        
+        "float uroughness" 0.01
+        "float vroughness" 0.01
+
+# 闪银铝板-TSD-238X		
+Texture "TSD_KM3T-43238X" "spectrum" "const" 
+    "float rgb" [ 0.768627 0.752941 0.709804 ]
+MakeNamedMaterial "TSD_KM3T-43238X"
+    "string type" [ "conductor"]
+    "string reflectance" [ "TSD_KM3T-43238X"]
+    "float uroughness" 0.040000
+    "float vroughness" 0.040000	
+	
+# 香槟金铝合金AJ-02	
+Texture "ANJU-LHJ-04" "spectrum" "const" 
+    "float rgb" [ 0.713725 0.603922 0.447059 ]
+MakeNamedMaterial "ANJU-LHJ-04"
+    "string type" [ "conductor"]
+    "string reflectance" [ "ANJU-LHJ-04"]
+    "float uroughness" 0.040000
+    "float vroughness" 0.040000
+	
+# 黑银铝板-TSD-1931				
+Texture "TSD_629-91931" "spectrum" "const" 
+    "float rgb" [ 0.235294 0.172549 0.121569 ]
+MakeNamedMaterial "TSD_629-91931"
+    "string type" [ "conductor"]
+    "string reflectance" [ "TSD_629-91931"]
+    "float uroughness" 0.160000
+    "float vroughness" 0.160000	
+	
+# 银灰铝板-TSD-2186	
+Texture "TSD_HF3T32186" "spectrum" "const" 
+    "float rgb" [ 0.435294 0.431373 0.403922 ]
+MakeNamedMaterial "TSD_HF3T32186"
+    "string type" [ "conductor"]
+    "string reflectance" [ "TSD_HF3T32186"]
+    "float uroughness" 0.160000
+    "float vroughness" 0.160000	
+	
+	
+# 冰川银金属色铝板	
+Texture "AC10275_III" "spectrum" "const"
+        "float rgb" [ 0.513725 0.513725 0.513725 ]
+MakeNamedMaterial "AC10275_III"
+        "string type" [ "conductor"]
+        "string reflectance" [ "AC10275_III" ]        
+        "float uroughness" 0.01
+        "float vroughness" 0.01	
+	
+# 米黄色仿石铝板FM-01			
+Texture "ANJU-FSLB-YELLOW-00" "spectrum" "imagemap"
+    "string filename" [ "material/dielectric/textures/ANJU-FSLB-YELLOW-00-texture.jpg" ]
+Texture "ANJU-FSLB-YELLOW-00_normal" "spectrum" "imagemap"
+    "string filename" [ "material/dielectric/textures/ANJU-FSLB-COFFEE-00-normal.jpg" ]
+MakeNamedMaterial "ANJU-FSLB-YELLOW-00"
+    "string type" [ "dielectric"]
+    "string reflectance" [ "ANJU-FSLB-YELLOW-00"]
+    "string normalmap" [ "ANJU-FSLB-YELLOW-00_normal"]
+    "float uroughness" 0.800000
+    "float vroughness" 0.800000
+    "float reflectivity" 0.000000
+    "float eta" 1.500000
+	
+# 香槟金铝板AJ-01
+Texture "ANJU-LB-CHAMGOLD00" "spectrum" "imagemap"
+    "string filename" [ "material/conductor/textures/ANJU-LB-CHAMGOLD00-texture.jpg" ]
+MakeNamedMaterial "ANJU-LB-CHAMGOLD00"
+    "string type" [ "conductor"]
+    "string reflectance" [ "ANJU-LB-CHAMGOLD00"]
+    "float uroughness" 0.060000
+    "float vroughness" 0.060000
+
+
+# 香槟银氟碳漆铝板-YY1
+Texture "XBYFTQLB-YY1" "spectrum" "const"
+        "float rgb" [ 0.494118 0.486275 0.466667 ]
+MakeNamedMaterial "XBYFTQLB-YY1"
+        "string type" [ "conductor"]
+        "string reflectance" [ "XBYFTQLB-YY1" ]        
+        "float uroughness" 0.01
+        "float vroughness" 0.01
+	
+	
+# 追梦银金属色铝板	
+Texture "AC10278_III" "spectrum" "const"
+        "float rgb" [ 0.490196 0.490196 0.490196 ]
+MakeNamedMaterial "AC10278_III"
+        "string type" [ "conductor"]
+        "string reflectance" [ "AC10278_III" ]        
+        "float uroughness" 0.01
+        "float vroughness" 0.01
+	
+
+# 浪琴香槟金属色铝板
+Texture "AC30019_III" "spectrum" "const"
+        "float rgb" [ 0.560784 0.529412 0.458824 ]
+MakeNamedMaterial "AC30019_III"
+        "string type" [ "conductor"]
+        "string reflectance" [ "AC30019_III" ]        
+        "float uroughness" 0.04
+        "float vroughness" 0.04
+
+# 闪银铝板-TSD-2923
+Texture "TSD_629-92923" "spectrum" "const" 
+    "float rgb" [ 0.529412 0.505882 0.470588 ]
+MakeNamedMaterial "TSD_629-92923"
+    "string type" [ "conductor"]
+    "string reflectance" [ "TSD_629-92923"]
+    "float uroughness" 0.060000
+    "float vroughness" 0.060000
+
+# 香槟金色铝型材YX-01
+Texture "yuexiu_lxc_xbj_01" "spectrum" "const" 
+    "float rgb" [ 0.505882 0.337255 0.203922 ]
+MakeNamedMaterial "yuexiu_lxc_xbj_01"
+    "string type" [ "conductor"]
+    "string reflectance" [ "yuexiu_lxc_xbj_01"]
+    "float uroughness" 0.040000
+    "float vroughness" 0.040000
+
+# 银灰铝板-TSD-774E						
+Texture "TSD_KM3T-43774E" "spectrum" "const" 
+    "float rgb" [ 0.780392 0.768627 0.721569 ]
+MakeNamedMaterial "TSD_KM3T-43774E"
+    "string type" [ "conductor"]
+    "string reflectance" [ "TSD_KM3T-43774E"]
+    "float uroughness" 0.040000
+    "float vroughness" 0.040000
+
+# 香槟金色铝板YX-01
+Texture "yuexiu_lb_hf3t32184" "spectrum" "const" 
+    "float rgb" [ 0.505882 0.337255 0.203922 ]
+MakeNamedMaterial "yuexiu_lb_hf3t32184"
+    "string type" [ "conductor"]
+    "string reflectance" [ "yuexiu_lb_hf3t32184"]
+    "float uroughness" 0.040000
+    "float vroughness" 0.040000
+
+# 土豪金金属色铝板
+Texture "MC60283_II" "spectrum" "const"
+        "float rgb" [ 0.800000 0.741176 0.639216 ]
+MakeNamedMaterial "MC60283_II"
+        "string type" [ "conductor"]
+        "string reflectance" [ "MC60283_II" ]        
+        "float uroughness" 0.04
+        "float vroughness" 0.04
+
+# 米白色仿石铝板AJ-FM9048		
+Texture "ANJU-FSLB-WHITE-FM9048" "spectrum" "imagemap"
+    "string filename" [ "material/dielectric/textures/ANJU-FSLB-WHITE-FM9048-texture.jpg" ]
+MakeNamedMaterial "ANJU-FSLB-WHITE-FM9048"
+    "string type" [ "dielectric"]
+    "string reflectance" [ "ANJU-FSLB-WHITE-FM9048"]
+    "float uroughness" 0.800000
+    "float vroughness" 0.800000
+    "float reflectivity" 0.000000
+    "float eta" 1.500000
+
+# 银灰氟碳漆铝板-YY3
+Texture "YHFTQLB-YY3" "spectrum" "const"
+        "float rgb" [ 0.215686 0.215686 0.215686 ]
+MakeNamedMaterial "YHFTQLB-YY3"
+        "string type" [ "conductor"]
+        "string reflectance" [ "YHFTQLB-YY3" ]        
+        "float uroughness" 0.04
+        "float vroughness" 0.04
+
+# 冷月银金属色铝板
+Texture "AC10273_III" "spectrum" "const"
+        "float rgb" [ 0.576471 0.576471 0.576471 ]
+MakeNamedMaterial "AC10273_III"
+        "string type" [ "conductor"]
+        "string reflectance" [ "AC10273_III" ]        
+        "float uroughness" 0.04
+        "float vroughness" 0.04
+
+# 咖色仿石铝板FM-01				
+Texture "ANJU-FSLB-COFFEE-00" "spectrum" "imagemap"
+    "string filename" [ "material/dielectric/textures/ANJU-FSLB-COFFEE-00-texture.jpg" ]
+Texture "ANJU-FSLB-COFFEE-00_normal" "spectrum" "imagemap"
+    "string filename" [ "material/dielectric/textures/ANJU-FSLB-YELLOW-00-normal.jpg" ]
+MakeNamedMaterial "ANJU-FSLB-COFFEE-00"
+    "string type" [ "dielectric"]
+    "string reflectance" [ "ANJU-FSLB-COFFEE-00"]
+    "string normalmap" [ "ANJU-FSLB-COFFEE-00_normal"]
+    "float uroughness" 0.800000
+    "float vroughness" 0.800000
+    "float reflectivity" 0.000000
+    "float eta" 1.500000
+
+# 工行银灰金属色铝板
+Texture "AC50346_III" "spectrum" "const"
+        "float rgb" [ 0.564706 0.564706 0.564706 ]
+MakeNamedMaterial "AC50346_III"
+        "string type" [ "conductor"]
+        "string reflectance" [ "AC50346_III" ]        
+        "float uroughness" 0.04
+        "float vroughness" 0.04
+
+# 米白色格栅AJ-02
+Texture "ANJU-LGS-WHITE01" "spectrum" "const" 
+    "float rgb" [ 0.984314 0.984314 0.956863 ]
+MakeNamedMaterial "ANJU-LGS-WHITE01"
+    "string type" [ "conductor"]
+    "string reflectance" [ "ANJU-LGS-WHITE01"]
+    "float uroughness" 0.040000
+    "float vroughness" 0.040000
+
+# 灰色穿孔铝板AJ-02
+Texture "ANJU-CKLB-GREY01" "spectrum" "imagemap"
+    "string filename" [ "material/conductor/textures/ANJU-CKLB-GREY01-texture.png" ]
+MakeNamedMaterial "ANJU-CKLB-GREY01"
+    "string type" [ "conductor"]
+    "string reflectance" [ "ANJU-CKLB-GREY01"]
+    "float uroughness" 0.040000
+    "float vroughness" 0.040000
+
+# 川沙银金属色铝板				
+Texture "AC60281_III" "spectrum" "const"
+        "float rgb" [ 0.803922 0.803922 0.803922 ]
+MakeNamedMaterial "AC60281_III"
+        "string type" [ "conductor"]
+        "string reflectance" [ "AC60281_III" ]        
+        "float uroughness" 0.04
+        "float vroughness" 0.04
+
+# 浓情咖啡银金属色铝板
+Texture "AC70059_III" "spectrum" "const"
+        "float rgb" [ 0.376471 0.337255 0.298039 ]
+MakeNamedMaterial "AC70059_III"
+        "string type" [ "conductor"]
+        "string reflectance" [ "AC70059_III" ]        
+        "float uroughness" 0.07
+        "float vroughness" 0.07
+
+# 深棕色氟碳漆铝板-KY3
+Texture "SZSFTQLB-KY3" "spectrum" "const"
+        "float rgb" [ 0.505882 0.450980 0.407843 ]
+MakeNamedMaterial "SZSFTQLB-KY3"
+        "string type" [ "conductor"]
+        "string reflectance" [ "SZSFTQLB-KY3" ]        
+        "float uroughness" 0.04
+        "float vroughness" 0.04
+
+
+# 太空银金属色铝板
+Texture "AC10276_III" "spectrum" "const"
+        "float rgb" [ 0.611765 0.611765 0.611765 ]
+MakeNamedMaterial "AC10276_III"
+        "string type" [ "conductor"]
+        "string reflectance" [ "AC10276_III" ]        
+        "float uroughness" 0.01
+        "float vroughness" 0.01
+
+# 深灰色铝合金AJ-02
+Texture "ANJU-LHJ-02" "spectrum" "const" 
+    "float rgb" [ 0.337255 0.349020 0.345098 ]
+MakeNamedMaterial "ANJU-LHJ-02"
+    "string type" [ "conductor"]
+    "string reflectance" [ "ANJU-LHJ-02"]
+    "float uroughness" 0.040000
+    "float vroughness" 0.040000
+	
+	
+# 浅蓝银金属色铝板	
+Texture "AC90048_III" "spectrum" "const"
+        "float rgb" [ 0.627451 0.650980 0.650980 ]
+MakeNamedMaterial "AC90048_III"
+        "string type" [ "conductor"]
+        "string reflectance" [ "AC90048_III" ]        
+        "float uroughness" 0.07
+        "float vroughness" 0.07
+	
+# 香槟金铝板-TSD-2184
+Texture "TSD_HF3T32184" "spectrum" "const" 
+    "float rgb" [ 0.580392 0.435294 0.278431 ]
+MakeNamedMaterial "TSD_HF3T32184"
+    "string type" [ "conductor"]
+    "string reflectance" [ "TSD_HF3T32184"]
+    "float uroughness" 0.080000
+    "float vroughness" 0.080000
+
+# 中灰色铝板YX-01
+Texture "yuexiu_lb_tsd-ff3t3825" "spectrum" "const" 
+    "float rgb" [ 0.454902 0.454902 0.454902 ]
+MakeNamedMaterial "yuexiu_lb_tsd-ff3t3825"
+    "string type" [ "conductor"]
+    "string reflectance" [ "yuexiu_lb_tsd-ff3t3825"]
+    "float uroughness" 0.040000
+    "float vroughness" 0.040000
+
+
+# 咖色仿石铝板AJ-FM11283			
+Texture "ANJU-FSLB-COFFEE-FM11283" "spectrum" "imagemap"
+    "string filename" [ "material/dielectric/textures/ANJU-FSLB-COFFEE-FM11283-texture.jpg" ]
+MakeNamedMaterial "ANJU-FSLB-COFFEE-FM11283"
+    "string type" [ "dielectric"]
+    "string reflectance" [ "ANJU-FSLB-COFFEE-FM11283"]
+    "float uroughness" 0.800000
+    "float vroughness" 0.800000
+    "float reflectivity" 0.000000
+    "float eta" 1.500000
+
+# 山楂红金属色铝板
+Texture "AC40026_III" "spectrum" "const"
+        "float rgb" [ 0.572549 0.388235 0.282353 ]
+MakeNamedMaterial "AC40026_III"
+        "string type" [ "conductor"]
+        "string reflectance" [ "AC40026_III" ]        
+        "float uroughness" 0.04
+        "float vroughness" 0.04
+
+
+# 闪银铝板-TSD-1426				
+Texture "TSD_HF2T31426" "spectrum" "const" 
+    "float rgb" [ 0.835294 0.827451 0.784314 ]
+MakeNamedMaterial "TSD_HF2T31426"
+    "string type" [ "conductor"]
+    "string reflectance" [ "TSD_HF2T31426"]
+    "float uroughness" 0.040000
+    "float vroughness" 0.040000
+
+
+# 深灰色格栅AJ-02
+Texture "ANJU-LGS-GREY01" "spectrum" "const" 
+    "float rgb" [ 0.400000 0.400000 0.400000 ]
+MakeNamedMaterial "ANJU-LGS-GREY01"
+    "string type" [ "conductor"]
+    "string reflectance" [ "ANJU-LGS-GREY01"]
+    "float uroughness" 0.040000
+    "float vroughness" 0.040000
+	
+# 孔雀石绿金属色铝板
+Texture "AC30018_III" "spectrum" "const"
+        "float rgb" [ 0.431373 0.541176 0.443137 ]
+MakeNamedMaterial "AC30018_III"
+        "string type" [ "conductor"]
+        "string reflectance" [ "AC30018_III" ]        
+        "float uroughness" 0.01
+        "float vroughness" 0.01
+
+# 深灰色铝板AJ-01
+Texture "ANJU-LB-GREY00" "spectrum" "imagemap"
+    "string filename" [ "material/conductor/textures/ANJU-LB-GREY00-texture.jpg" ]
+MakeNamedMaterial "ANJU-LB-GREY00"
+    "string type" [ "conductor"]
+    "string reflectance" [ "ANJU-LB-GREY00"]
+    "float uroughness" 0.060000
+    "float vroughness" 0.060000
+
+# 中灰色铝型材YX-01
+Texture "yuexiu__lxc_zhs_01" "spectrum" "const" 
+    "float rgb" [ 0.454902 0.454902 0.454902 ]
+MakeNamedMaterial "yuexiu__lxc_zhs_01"
+    "string type" [ "conductor"]
+    "string reflectance" [ "yuexiu__lxc_zhs_01"]
+    "float uroughness" 0.040000
+    "float vroughness" 0.040000
+
+# 沙滩银金属色铝板
+Texture "AC50345_III" "spectrum" "const"
+        "float rgb" [ 0.294118 0.278431 0.219608 ]
+MakeNamedMaterial "AC50345_III"
+        "string type" [ "conductor"]
+        "string reflectance" [ "AC50345_III" ]        
+        "float uroughness" 0.07
+        "float vroughness" 0.07
+
+# 香槟金金属色铝板
+Texture "M03-40A" "spectrum" "const"
+        "float rgb" [ 0.486275 0.407843 0.223529 ]
+MakeNamedMaterial "M03-40A"
+        "string type" [ "conductor"]
+        "string reflectance" [ "M03-40A" ]        
+        "float uroughness" 0.04
+        "float vroughness" 0.04
+
+# 苍海银金属色铝板				
+Texture "AC50347_III" "spectrum" "const"
+        "float rgb" [ 0.584314 0.584314 0.584314 ]
+MakeNamedMaterial "AC50347_III"
+        "string type" [ "conductor"]
+        "string reflectance" [ "AC50347_III" ]        
+        "float uroughness" 0.04
+        "float vroughness" 0.04

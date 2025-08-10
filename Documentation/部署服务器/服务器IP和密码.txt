@@ -1,0 +1,26 @@
+192.168.1.34:
+	dte/123
+	root/123
+	显卡: 4070 Ti Super
+	硬盘: 2T
+	cpu: Intel(R) Core(TM) i7-14700KF
+	内存: 4条32G DDR5 Asgard内存条
+		
+192.168.1.207:
+	dte/123
+	root/123
+	显卡: 4080
+	硬盘1: 1T
+	硬盘2: 1T
+	硬盘3: 8T
+	cpu: Intel(R) Xeon(R) Gold 6154 CPU @ 3.00GHz
+	内存: 16条32G DDR4 Samsung内存条
+
+192.168.1.208:	
+	dte/123
+	root/123	
+	显卡: 3090
+	硬盘: 500G
+	cpu: AMD Ryzen 9 7950X 16-Core Processor
+	内存: 4条32G DDR5 Kingston 内存条
+	

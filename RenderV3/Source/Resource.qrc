@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/Resource">
+        <file>QML/1.qml</file>
+        <file>QML/Label.qml</file>
+        <file>QML/LineEdit.qml</file>
+        <file>QML/MaterialType.qml</file>
+        <file>QML/Slider.qml</file>
+        <file>QML/ColorButton.qml</file>
+        <file>QML/Button.qml</file>
+        <file>QML/Images/close.png</file>
+        <file>QML/Images/close.svg</file>
+        <file>QML/Images/close@3x.png</file>
+        <file>QML/ClearButton.qml</file>
+        <file>QML/GroupBox.qml</file>
+        <file>QML/ListView.qml</file>
+        <file>QML/CheckBox.qml</file>
+    </qresource>
+</RCC>

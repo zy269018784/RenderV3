@@ -1,0 +1,236 @@
+#version 460
+#extension GL_EXT_ray_tracing : enable
+#extension GL_GOOGLE_include_directive : enable
+ 
+#include "common.glsl"
+#include "shaderlib/ColorSpace.glsl"
+#include "shaderlib/Material.glsl"
+#include "random.glsl"
+#include "shaderlib/Camera.glsl"
+#include "shaderlib/frame.glsl"
+#include "shaderlib/Math.glsl"
+//#include "shaderlib/BSDF.glsl"
+#include "shaderlib/EqualAreaMapping.glsl"
+#include "shaderlib/PiecewiseConstant2D.glsl"
+#include "shaderlib/Tonemapping.glsl"
+#include "shaderlib/GammaCorrection.glsl"
+#include "shaderlib/sRGB.glsl"
+#include "shaderlib/Transform.glsl"
+#include "shaderlib/HDRParams.glsl"
+#include "shaderlib/Light.glsl"
+
+
+struct PostprocessingParams
+{
+	vec4 params;
+};
+
+layout(binding = 1, set = 0, rgba8) uniform image2D image; 
+layout(binding = 2, set = 0) uniform RenderParams { UBORenderParams rp; }; //
+layout(binding = 6, set = 0) uniform sampler2D[] HDRs; 
+layout(binding = 13, set = 0, rgba32f) uniform image2D image2;
+layout(binding = 15, set = 0) uniform Postprocessing { PostprocessingParams postprocess; }; 
+
+#if 1
+layout(binding = 0, set = 0) uniform accelerationStructureEXT topLevelAS;
+layout(location = 0) rayPayloadEXT HitPayload payload; 
+layout(location = 2) rayPayloadEXT bool shadowed;
+layout(location = 3) rayPayloadEXT uint payloadSeed;
+#endif
+
+#include "shaderlib/SceneIntersection.glsl"
+
+/*
+	rtscene.rgen		生成光线
+	rtscene.rchit		求交(最近点)
+	rtscene.rahit		求交(镂空)
+	shadow.rmiss		没求交到（阴影）
+	rtscene.rmiss		天空盒
+*/
+
+//void IntersectScene(Ray ray, float min, float max)
+//{
+//	traceRayEXT(topLevelAS, gl_RayFlagsNoneEXT, 0xff, 0, 0, 0, ray.o, min, ray.d, max, 0);
+//}
+
+
+void PathTracing();
+void main() 
+{ 	 
+	PathTracing();
+}
+#if 0
+vec3 sampleEnvironmentLight()
+{
+	vec3 radiance = vec3(0);
+	// Sample environment light
+	lRec.flags = EArea;
+	lRec.dist = INFINITY;
+	// Eusure visible light
+	lRec.n = -makeNormal(gl_WorldRayDirectionEXT);
+	if (sunAndSky.in_use == 1)
+		radiance = sampleSunSky(rand2(payload.pRec.seed), sunAndSky, lRec.d, lRec.pdf);
+	else if (pc.hasEnvMap == 1)
+		radiance = sampleEnvmap(rand2(payload.pRec.seed), envmapSamplers, cameraInfo.envTransform, pc.envMapResolution,
+                            pc.envMapIntensity, lRec.d, lRec.pdf);
+	else
+		radiance = sampleBackGround(rand2(payload.pRec.seed), pc.bgColor, lRec.d, lRec.pdf);
+	return radiance;
+}
+
+vec3 sampleOneLight(vec2 rnd, Light light, vec3 scatterPos,
+                    inout LightSamplingRecord lRec) {
+  int type = int(light.type);
+  if (type == LightTypeRect)
+    return sampleRectLight(r, light, scatterPos, lRec);
+  else if (type == LightTypeDirectional)
+    return sampleDistantLight(light, scatterPos, lRec);
+  else if (type == LightTypePoint)
+    return samplePointLight(light, scatterPos, lRec);
+  else if (type == LightTypeTriangle)
+    return sampleTriangleLight(r, light, scatterPos, lRec);
+}
+
+vec3 sampleLights(vec3 scatterPos, vec3 scatterNormal, out bool visible, out LightSamplingRecord lRec)
+{
+    bool allowDoubleSide = false;
+    vec3 radiance = vec3(0);
+	
+	bool hasEnv = true;//(pc.hasEnvMap == 1 || sunAndSky.in_use == 1);
+    bool hasLight = true;//(pc.numLights > 0);
+    float envSelectPdf, lightSelectPdf;
+    if (hasEnv && hasLight)
+		envSelectPdf = lightSelectPdf = 0.5f;
+    else if (hasEnv)
+		envSelectPdf = 1.f, lightSelectPdf = 0.f;
+    else if (hasLight)
+		envSelectPdf = 0.f, lightSelectPdf = 1.f;
+    else
+		envSelectPdf = lightSelectPdf = 0.f;
+	  
+	float envOrLightSelector = rand(payload.pRec.seed);
+    if (envOrLightSelector < envSelectPdf) { // Sample environment light
+		radiance = sampleEnvironmentLight(lRec) / envSelectPdf;
+		allowDoubleSide = true;
+    } 
+	else if (envOrAnalyticSelector < envSelectPdf + analyticSelectPdf) { // Sample analytic light, randomly pick one
+		int lightIndex = min(1 + int(rand(payload.pRec.seed) * pc.numLights), pc.numLights);
+		GpuLight light = lights.l[lightIndex];
+		radiance = sampleOneLight(rand2(payload.pRec.seed), light, scatterPos, lRec) * pc.numLights / analyticSelectPdf;
+		allowDoubleSide = true;//(light.doubleSide == 1);
+    }
+
+    // Configure direct light setting by light sample
+    payload.dRec.ray.o = offsetPositionAlongNormal(scatterPos, scatterNormal);
+    payload.dRec.ray.d = lRec.d;
+    payload.dRec.dist = lRec.dist;
+
+    // Light at the back of the surface is not visible
+    visible = (dot(lRec.d, scatterNormal) > 0.0 && lRec.pdf > 0.0);
+    // Surface on the back of the light is also not illuminated
+    visible = visible && (dot(lRec.n, lRec.d) < 0 || allowDoubleSide);
+
+    return radiance;
+}
+#endif
+
+void initCamera(inout Camera camera)
+{
+	camera.cameraFromWorld = rp.cameraFromWorld;
+	camera.worldFromCamera = rp.worldFromCamera;
+	camera.screenFromCamera = rp.screenFromCamera;  // 已知: Perspective(fov, 1e-2f, 1000.f);
+	camera.screenFromRaster = rp.screenFromRaster;  // Inverse(rasterFromScreen) 
+	camera.screenFromNDC = rp.screenFromNDC;   		// Inverse(NDCFromScreen)
+	camera.rasterFromScreen = rp.rasterFromScreen;  // rasterFromNDC * NDCFromScreen;
+	camera.rasterFromNDC = rp.rasterFromNDC;    	// 已知: Scale(film.FullResolution().x, -film.FullResolution().y, 1);
+	camera.rasterFromCamera = rp.rasterFromCamera;  // Inverse(cameraFromRaster)
+	camera.cameraFromRaster = rp.cameraFromRaster;  // Inverse(screenFromCamera) * screenFromRaster;
+	camera.cameraFromNDC = rp.cameraFromNDC;       	// cameraFromRaster * rasterFromNDC; 
+	camera.cameraFromScreen = rp.cameraFromScreen;  // cameraFromRaster * rasterFromScreen;
+	camera.NDCFromScreen = rp.NDCFromScreen;        // 已知:
+	camera.NDCFromRaster = rp.NDCFromRaster;       	// Inverse(rasterFromNDC) = NDCFromScreen * screenFromRaster
+	camera.NDCFromCamera = rp.NDCFromCamera;       	// Inverse(cameraFromNDC) = NDCFromScreen * screenFromCamera
+}
+
+
+
+void PathTracing()
+{
+	uint frame = rp.frame; 
+	uint maxSamples = rp.spp;     
+	uint maxDepth = rp.maxDepth;
+	uint RenderWidth = rp.RenderWidth;
+	uint RenderHeight = rp.RenderHeight; 
+	
+	uint seed = tea(gl_LaunchIDEXT.y * gl_LaunchSizeEXT.x + gl_LaunchIDEXT.x, frame); 
+	float r1 = rnd(seed);
+	float r2 = rnd(seed);		 
+	vec2 subpixel_jitter = vec2(r1, r2);
+	vec2 pixel = vec2(gl_LaunchIDEXT.xy) + subpixel_jitter;
+	// UV
+	vec2 inUV = pixel / vec2(gl_LaunchSizeEXT.xy);
+	
+	Camera camera;
+	initCamera(camera); 
+		  
+	CameraSample cs;
+	cs.pRaster = vec4(inUV.x * RenderWidth, inUV.y * RenderHeight, 0, 1);
+	// 从相机生成射线
+	Ray ray;	
+	ray = GenerateRay(camera, cs);
+	
+	vec3 L = vec3(0.0);
+	vec3 beta = vec3(1.0);
+	vec3 color = vec3(0.0);
+	payload.uSpaceColorType = rp.tonemapType;
+	for(uint depth = 0; depth < 5; depth++) {
+		payload.done 		= false;
+		payload.depth		= depth;
+		//payload.radiance 	= color;
+		payload.rayOrigin 	= ray.o;
+		payload.rayDir 		= ray.d;
+		payload.beta 		= beta; 
+		payload.L 			= L; 
+		payload.seed = seed;
+		IntersectScene(ray.o, ray.d, MINIMUM, INFINITY, topLevelAS);
+		//color 	= payload.radiance;
+		beta 	= payload.beta; 
+		L 		= payload.L;	
+		// 更新射线
+		ray.o 	= payload.rayOrigin;
+		ray.d 	= payload.rayDir;
+		// 天空盒, 结束
+		if(payload.done) 
+			break;  
+	} 
+
+	vec3 acc = frame > 1 ? imageLoad(image2, ivec2(gl_LaunchIDEXT.xy)).xyz : vec3(0.0);
+	acc += L;  
+	imageStore(image2, ivec2(gl_LaunchIDEXT.xy), vec4(acc, 1.0)); 
+	
+	float inv = 1.f / float(frame);  
+	vec3 final = acc * inv; 
+ 
+	float outputGamma = rp.outputGamma;
+	float exposure = rp.exposure;
+
+	if(payload.uSpaceColorType == 0){
+		final *= exposure;
+		final = GammaCorrection(final, 1.f / outputGamma); 
+	}
+	else if(payload.uSpaceColorType == 1){
+		final *= exposure;
+		final = clamp(ACESFilm(final),0.0,1.0); 
+		final = ACEScg_to_Linear(final);
+		final = GammaCorrection(final, 1.f / outputGamma); //Linear_to_sRGB(final);
+	}
+	else if(payload.uSpaceColorType == 2){ 
+		final = toneMapReinhard(final, exposure);
+		final = GammaCorrection(final, 1.f / outputGamma);
+	}
+
+
+	imageStore(image, ivec2(gl_LaunchIDEXT.xy), vec4(final, 1.f)); 
+
+ 
+}

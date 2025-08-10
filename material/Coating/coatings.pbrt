@@ -1,0 +1,198 @@
+# 涂料
+
+# 纯黑涂料平涂
+Texture "NN7800-1" "spectrum" "imagemap"
+    "string filename" [ "material/Coating/textures/NN7800-1-texture.jpg" ]
+Texture "NN7800-1_normal" "spectrum" "imagemap"
+    "string filename" [ "material/Coating/textures/NN7800-1-normal.jpg" ]
+MakeNamedMaterial "NN7800-1"
+    "string type" [ "conductor"]
+    "string reflectance" [ "NN7800-1"]
+    "string normalmap" [ "NN7800-1_normal"]
+    "float uroughness" 0.5
+    "float vroughness" 0.5
+    "float eta" 1.5
+
+# 咖色真石漆AJ-01
+Texture "ANJU-ZSQ-COFFEE01" "spectrum" "imagemap"
+    "string filename" [ "material/Coating/textures/ANJU-ZSQ-COFFEE01-texture.jpg" ]
+MakeNamedMaterial "ANJU-ZSQ-COFFEE01"
+    "string type" [ "conductor"]
+    "string reflectance" [ "ANJU-ZSQ-COFFEE01"]
+    "float uroughness" 0.800000
+    "float vroughness" 0.800000
+    "float reflectivity" 0.000000
+    "float eta" 1.500000
+
+# 白色乳胶漆AJ-02
+Texture "ANJU-RJQ-WHITE01" "spectrum" "const" 
+    "float rgb" [ 0.949020 0.949020 0.949020 ]
+MakeNamedMaterial "ANJU-RJQ-WHITE01"
+    "string type" [ "conductor"]
+    "string reflectance" [ "ANJU-RJQ-WHITE01"]
+    "float uroughness" 0.800000
+    "float vroughness" 0.800000
+    "float reflectivity" 0.000000
+    "float eta" 1.500000
+
+# 深灰色真石漆AJ-01
+Texture "yas-grey-HGJDA-A692-4DC" "spectrum" "imagemap"
+    "string filename" [ "material/Coating/textures/yas-grey-HGJDA-A692-4DC-texture.jpg" ]
+Texture "yas-grey-HGJDA-A692-4DC_normal" "spectrum" "imagemap"
+    "string filename" [ "material/Coating/textures/yas-grey-HGJDA-A692-4DC-normal.jpg" ]
+MakeNamedMaterial "yas-grey-HGJDA-A692-4DC"
+    "string type" [ "conductor"]
+    "string reflectance" [ "yas-grey-HGJDA-A692-4DC"]
+    "string normalmap" [ "yas-grey-HGJDA-A692-4DC_normal"]
+    "float uroughness" 0.800000
+    "float vroughness" 0.800000
+    "float reflectivity" 0.000000
+    "float eta" 1.500000
+
+# 米白色真石漆AJ-03
+Texture "HZTDE-B276-4DC" "spectrum" "imagemap"
+    "string filename" [ "material/Coating/textures/HZTDE-B276-4DC-texture.jpg" ]
+MakeNamedMaterial "HZTDE-B276-4DC"
+    "string type" [ "conductor"]
+    "string reflectance" [ "HZTDE-B276-4DC"]
+    "float uroughness" 0.800000
+    "float vroughness" 0.800000
+    "float reflectivity" 0.000000
+    "float eta" 1.500000
+
+# 米白色真石漆AJ-02
+Texture "HZTDE-B278-4DC" "spectrum" "imagemap"
+    "string filename" [ "material/Coating/textures/HZTDE-B278-4DC-texture.jpg" ]
+MakeNamedMaterial "HZTDE-B278-4DC"
+    "string type" [ "conductor"]
+    "string reflectance" [ "HZTDE-B278-4DC"]
+    "float uroughness" 0.800000
+    "float vroughness" 0.800000
+    "float reflectivity" 0.000000
+    "float eta" 1.500000
+
+# 灰色乳胶漆AJ-02
+Texture "ANJU-RJQ-GREY01" "spectrum" "const" 
+    "float rgb" [ 0.529412 0.529412 0.529412 ]
+MakeNamedMaterial "ANJU-RJQ-GREY01"
+    "string type" [ "conductor"]
+    "string reflectance" [ "ANJU-RJQ-GREY01"]
+    "float uroughness" 0.800000
+    "float vroughness" 0.800000
+    "float reflectivity" 0.000000
+    "float eta" 1.500000
+
+# 棕色毛刷纹质感涂料
+Texture "HGJ011-20-1" "spectrum" "imagemap"
+    "string filename" [ "material/Coating/textures/HGJ011-20-1-texture.jpg" ]
+Texture "HGJ011-20-1_normal" "spectrum" "imagemap"
+    "string filename" [ "material/Coating/textures/HGJ011-20-1-normal.jpg" ]
+MakeNamedMaterial "HGJ011-20-1"
+    "string type" [ "conductor"]
+    "string reflectance" [ "HGJ011-20-1"]
+    "string normalmap" [ "HGJ011-20-1_normal"]
+    "float uroughness" 0.3
+    "float vroughness" 0.3
+    "float eta" 1.5
+
+# 棕色虫噬纹质感涂料
+Texture "HGJ007-20-1" "spectrum" "imagemap"
+    "string filename" [ "material/Coating/textures/HGJ007-20-1-texture.jpg" ]
+Texture "HGJ007-20-1_normal" "spectrum" "imagemap"
+    "string filename" [ "material/Coating/textures/HGJ007-20-1-normal.jpg" ]
+MakeNamedMaterial "HGJ007-20-1"
+    "string type" [ "conductor"]
+    "string reflectance" [ "HGJ007-20-1"]
+    "string normalmap" [ "HGJ007-20-1_normal"]
+    "float uroughness" 0.3
+    "float vroughness" 0.3
+    "float eta" 1.5
+
+# 米黄色真石漆AJ-01
+Texture "yas-yellow-FNMDP-A378-4DC" "spectrum" "imagemap"
+    "string filename" [ "material/Coating/textures/yas-yellow-FNMDP-A378-4DC-texture.jpg" ]
+Texture "yas-yellow-FNMDP-A378-4DC_normal" "spectrum" "imagemap"
+    "string filename" [ "material/Coating/textures/yas-yellow-FNMDP-A378-4DC-normal.jpg" ]
+MakeNamedMaterial "yas-yellow-FNMDP-A378-4DC"
+    "string type" [ "conductor"]
+    "string reflectance" [ "yas-yellow-FNMDP-A378-4DC"]
+    "string normalmap" [ "yas-yellow-FNMDP-A378-4DC_normal"]
+    "float uroughness" 0.800000
+    "float vroughness" 0.800000
+    "float reflectivity" 0.000000
+    "float eta" 1.500000
+
+# 深灰色真石漆AJ-02
+Texture "HZTDE-B277-4DC" "spectrum" "imagemap"
+    "string filename" [ "material/Coating/textures/HZTDE-B277-4DC-texture.jpg" ]
+MakeNamedMaterial "HZTDE-B277-4DC"
+    "string type" [ "conductor"]
+    "string reflectance" [ "HZTDE-B277-4DC"]
+    "float uroughness" 0.800000
+    "float vroughness" 0.800000
+    "float reflectivity" 0.000000
+    "float eta" 1.500000
+
+# 米色涂料平涂
+Texture "NN3820-3" "spectrum" "imagemap"
+    "string filename" [ "material/Coating/textures/NN3820-3-texture.jpg" ]
+Texture "NN3820-3_normal" "spectrum" "imagemap"
+    "string filename" [ "material/Coating/textures/NN3820-3-normal.jpg" ]
+MakeNamedMaterial "NN3820-3"
+    "string type" [ "conductor"]
+    "string reflectance" [ "NN3820-3"]
+    "string normalmap" [ "NN3820-3_normal"]
+    "float uroughness" 0.5
+    "float vroughness" 0.5
+    "float eta" 1.5
+
+# 棕色平搓质感涂料
+Texture "HGJ004-20-1" "spectrum" "imagemap"
+    "string filename" [ "material/Coating/textures/HGJ004-20-1-texture.jpg" ]
+Texture "HGJ004-20-1_normal" "spectrum" "imagemap"
+    "string filename" [ "material/Coating/textures/HGJ004-20-1-normal.jpg" ]
+MakeNamedMaterial "HGJ004-20-1"
+    "string type" [ "conductor"]
+    "string reflectance" [ "HGJ004-20-1"]
+    "string normalmap" [ "HGJ004-20-1_normal"]
+    "float uroughness" 0.3
+    "float vroughness" 0.3
+    "float eta" 1.5
+
+# 松灰涂料平涂
+Texture "NN0378-4" "spectrum" "imagemap"
+    "string filename" [ "material/Coating/textures/NN0378-4-texture.jpg" ]
+Texture "NN0378-4_normal" "spectrum" "imagemap"
+    "string filename" [ "material/Coating/textures/NN0378-4-normal.jpg" ]
+MakeNamedMaterial "NN0378-4"
+    "string type" [ "conductor"]
+    "string reflectance" [ "NN0378-4"]
+    "string normalmap" [ "NN0378-4_normal"]
+    "float uroughness" 0.5
+    "float vroughness" 0.5
+    "float eta" 1.5
+
+
+# 浅黄色真石漆1
+Texture "HZTBI-A007-2QC" "spectrum" "imagemap"
+    "string filename" [ "material/Coating/textures/HZTBI-A007-2QC-texture.jpg" ]
+Texture "HZTBI-A007-2QC_normal" "spectrum" "imagemap"
+    "string filename" [ "material/Coating/textures/HZTBI-A007-2QC-normal.jpg" ]
+MakeNamedMaterial "HZTBI-A007-2QC"
+    "string type" [ "conductor"]
+    "string reflectance" [ "HZTBI-A007-2QC"]
+    "string normalmap" [ "HZTBI-A007-2QC_normal"]
+    "float uroughness" 0.5
+    "float vroughness" 0.5
+    "float eta" 1.5
+
+# 深灰色真石漆AJ-03
+Texture "HZTDI-C028-2DC" "spectrum" "imagemap"
+    "string filename" [ "material/Coating/textures/HZTDI-C028-2DC-texture.jpg" ]
+MakeNamedMaterial "HZTDI-C028-2DC"
+    "string type" [ "conductor"]
+    "string reflectance" [ "HZTDI-C028-2DC"]
+    "float uroughness" 0.800000
+    "float vroughness" 0.800000
+    "float reflectivity" 0.000000
+    "float eta" 1.500000

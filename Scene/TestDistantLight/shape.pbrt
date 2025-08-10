@@ -1,0 +1,157 @@
+Shape "back_1" "trianglemesh"
+	"point3 P" 
+	[
+		-1000	 0		-1000 
+		 1000	 0		-1000 
+		 1000	 1000  	-1000 
+		-1000	 1000  	-1000 
+	]
+	"normal N" 
+	[
+		0 0 1 
+		0 0 1 
+		0 0 1 
+		0 0 1 
+	]
+	"point2 uv" 
+	[
+		0 0 
+		1 0 
+		1 1 
+		0 1 
+	]
+	"integer indices"
+	[ 0 1 2 2 3 0 ]
+	
+
+
+Shape "front_1" "trianglemesh"
+	"point3 P" 
+	[
+		-1000	    0 	1000 
+		 1000	    0 	1000 
+		 1000	 1000  	1000 
+		-1000	 1000  	1000 
+	]
+	"normal N" 
+	[
+		0 0 1 
+		0 0 1 
+		0 0 1 
+		0 0 1 
+	]
+	"point2 uv" 
+	[
+		0 0 
+		1 0 
+		1 1 
+		0 1 
+	]
+	"integer indices"
+	[ 
+		0 1 2 2 3 0 
+	]
+	
+Shape "left_1" "trianglemesh"
+	"point3 P" 
+	[
+		-1000	    0	-1000 
+		-1000	    0	 1000 
+		-1000	 1000 	 1000 
+		-1000	 1000 	-1000 
+	]
+	"normal N" 
+	[
+		-1 0 0 
+		-1 0 0 
+		-1 0 0 
+		-1 0 0 
+	]
+	"point2 uv" 
+	[
+		0 0 
+		1 0 
+		1 1 
+		0 1 
+	]
+	"integer indices"
+	[ 
+		0 1 2 2 3 0 
+	]
+	
+Shape "right_1" "trianglemesh"
+	"point3 P" 
+	[
+		1000		    0	 1000 
+		1000		    0	-1000 
+		1000		 1000 	-1000 
+		1000		 1000 	 1000 
+	]
+	"normal N" 
+	[
+		1 0 0 
+		1 0 0 
+		1 0 0 
+		1 0 0 
+	]
+	"point2 uv" 
+	[
+		0 0 
+		1 0 
+		1 1 
+		0 1 
+	]
+	"integer indices"
+	[ 0 1 2 2 3 0 ]
+	
+Shape "top_1" "trianglemesh"
+	"point3 P" 
+	[
+		-1000	1000		 1000 
+		 1000	1000		 1000 
+		 1000	1000		-1000 
+		-1000	1000		-1000 
+	]
+	"normal N" 
+	[
+		0 1 0 
+		0 1 0 
+		0 1 0 
+		0 1 0 
+	]
+	"point2 uv"
+	[
+		0 0 
+		1 0 
+		1 1 
+		0 1 
+	]
+	"integer indices"
+	[ 
+		0 1 2 2 3 0 
+	]
+	
+Shape "bottom_1" "trianglemesh"
+	"point3 P" 
+	[
+		-1000	   0	 1000 
+		 1000	   0	 1000 
+		 1000	   0	-1000 
+		-1000	   0	-1000 
+	]
+	"normal N" 
+	[
+		0 -1 0 
+		0 -1 0 
+		0 -1 0 
+		0 -1 0 
+	]
+	"point2 uv" 
+	[
+		0 0 
+		1 0 
+		1 1 
+		0 1 
+	]
+	"integer indices"
+	[ 0 1 2 2 3 0 ]

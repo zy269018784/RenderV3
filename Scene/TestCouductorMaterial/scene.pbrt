@@ -1,0 +1,16 @@
+Include "TestCouductorMaterial/camera.pbrt"
+Include "TestCouductorMaterial/light.pbrt"
+Include "TestCouductorMaterial/material.pbrt"
+Include "TestCouductorMaterial/shape.pbrt"
+Include "TestCouductorMaterial/object.pbrt"
+Include "TestCouductorMaterial/instance.pbrt"
+Include "TestCouductorMaterial/sky.pbrt"
+
+Integrator "test"
+Film "rgb"
+	"string filename" [ "glass.png" ]
+	"integer xresolution" [ 1920 ]
+	"integer yresolution" [ 1080 ]
+	
+	
+

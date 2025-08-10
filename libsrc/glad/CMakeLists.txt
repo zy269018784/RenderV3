@@ -1,0 +1,7 @@
+project(GLAD)
+add_library(GLAD ${CMAKE_CURRENT_SOURCE_DIR}/glad.c)
+target_include_directories(GLAD PUBLIC
+	${CMAKE_CURRENT_SOURCE_DIR}
+	${CMAKE_CURRENT_SOURCE_DIR}/glad
+	${CMAKE_CURRENT_SOURCE_DIR}/KHR
+)

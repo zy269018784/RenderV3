@@ -1,0 +1,16 @@
+option (USE_Qt "USE Qt" ON)
+if (USE_Qt)
+	set (Qt_DIRECTORY "qt6")
+	set (Qt_INCLUDE_PATH  
+		${LIBRARY_PREFIX_PATH}/${CMAKE_SYSTEM_NAME}/${Qt_DIRECTORY}/include 
+		${LIBRARY_PREFIX_PATH}/${CMAKE_SYSTEM_NAME}/${Qt_DIRECTORY}/include/QtCore 
+		${LIBRARY_PREFIX_PATH}/${CMAKE_SYSTEM_NAME}/${Qt_DIRECTORY}/include/QtGui 
+		${LIBRARY_PREFIX_PATH}/${CMAKE_SYSTEM_NAME}/${Qt_DIRECTORY}/include/QtWidgets 
+		)
+		set (Qt_LINK_PATH ${LIBRARY_PREFIX_PATH}/${CMAKE_SYSTEM_NAME}/${Qt_DIRECTORY}/lib)
+	if (CMAKE_SYSTEM_NAME STREQUAL Windows)
+		set (Qt_LIBS Qt6Core.lib Qt6Gui.lib Qt6Widgets.lib)
+	elseif (CMAKE_SYSTEM_NAME STREQUAL Linux)
+		set (Qt_LIBS libQt.so.1.3.290)
+	endif ()		
+endif ()

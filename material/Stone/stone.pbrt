@@ -1,0 +1,56 @@
+# 石材
+
+# 奥利奥灰(光面)花岗岩
+Texture "ANJU-SC-02-ALAH" "spectrum" "imagemap"
+    "string filename" [ "material/Stone/textures/ANJU-SC-02-ALAH-texture.jpg" ]
+MakeNamedMaterial "ANJU-SC-02-ALAH"
+    "string type" [ "conductor"]
+    "string reflectance" [ "ANJU-SC-02-ALAH"]
+    "float uroughness" 0.500000
+    "float vroughness" 0.500000
+    "float reflectivity" 0.250000
+    "float eta" 1.500000
+	
+# 鱼肚灰(光面)花岗岩
+Texture "ANJU-SC-01-YDH" "spectrum" "imagemap"
+    "string filename" [ "material/Stone/textures/ANJU-SC-01-YDH-texture.jpg" ]
+MakeNamedMaterial "ANJU-SC-01-YDH"
+    "string type" [ "conductor"]
+    "string reflectance" [ "ANJU-SC-01-YDH"]
+    "float uroughness" 0.500000
+    "float vroughness" 0.500000
+    "float reflectivity" 0.250000
+    "float eta" 1.500000
+
+# 爱马仕灰(光面)花岗岩-深灰
+Texture "YUNFU_XS-hermes_grey_02" "spectrum" "imagemap"
+    "string filename" [ "material/Stone/textures/YUNFU_XS-hermes_grey_02-texture.jpg" ]
+MakeNamedMaterial "YUNFU_XS-hermes_grey_02"
+    "string type" [ "conductor"]
+    "string reflectance" [ "YUNFU_XS-hermes_grey_02"]
+    "float uroughness" 0.500000
+    "float vroughness" 0.500000
+    "float reflectivity" 0.250000
+    "float eta" 1.500000
+
+# 爱马仕灰(光面)花岗岩-中灰
+Texture "YUNFU_XS-hermes_grey_01" "spectrum" "imagemap"
+    "string filename" [ "material/Stone/textures/YUNFU_XS-hermes_grey_01-texture.jpg" ]
+MakeNamedMaterial "YUNFU_XS-hermes_grey_01"
+    "string type" [ "conductor"]
+    "string reflectance" [ "YUNFU_XS-hermes_grey_01"]
+    "float uroughness" 0.500000
+    "float vroughness" 0.500000
+    "float reflectivity" 0.250000
+    "float eta" 1.500000
+
+# 爱马仕灰(光面)花岗岩-浅灰	
+Texture "YUNFU_XS-hermes_grey_00" "spectrum" "imagemap"
+    "string filename" [ "material/Stone/textures/YUNFU_XS-hermes_grey_00-texture.jpg" ]
+MakeNamedMaterial "YUNFU_XS-hermes_grey_00"
+    "string type" [ "conductor"]
+    "string reflectance" [ "YUNFU_XS-hermes_grey_00"]
+    "float uroughness" 0.500000
+    "float vroughness" 0.500000
+    "float reflectivity" 0.250000
+    "float eta" 1.500000

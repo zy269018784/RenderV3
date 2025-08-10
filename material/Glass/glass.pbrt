@@ -1,0 +1,228 @@
+# 玻璃
+
+# 中性灰高透三银Low-E中空玻璃
+Texture "6KNG6025T-12A-6" "spectrum" "const"
+        "float rgb" [ 0.874510 0.937255 0.898039 ]
+MakeNamedMaterial "6KNG6025T-12A-6"
+        "string type" [ "glass" ]
+        "string reflectance" [ "6KNG6025T-12A-6" ]
+        "float reflectivity"         [ 0.11 ]
+        "float transmissivity"         [ 0.61 ]
+
+# 蓝灰色低透Low-E中空玻璃2
+Texture "8C(XD30301)_2-12A-8C" "spectrum" "const"
+        "float rgb" [ 0.396078 0.423529 0.450980 ]
+MakeNamedMaterial "8C(XD30301)_2-12A-8C"
+        "string type" [ "glass" ]
+        "string reflectance" [ "8C(XD30301)_2-12A-8C" ]
+        "float reflectivity"         [ 0.16 ]
+        "float transmissivity"         [ 0.40 ]
+
+
+# 蓝灰色热反射镀膜单片玻璃
+Texture "6_SR150" "spectrum" "const"
+        "float rgb" [ 0.584314 0.666667 0.650980 ]
+MakeNamedMaterial "6_SR150"
+        "string type" [ "glass" ]
+        "string reflectance" [ "6_SR150" ]
+        "float reflectivity"         [ 0.23 ]
+        "float transmissivity"         [ 0.53 ]
+
+
+
+# 灰色低透双银Low-E中空玻璃
+Texture "6(KBS4724D1)-12A-6" "spectrum" "const"
+        "float rgb" [ 0.768627 0.905882 0.854902 ]
+MakeNamedMaterial "6(KBS4724D1)-12A-6"
+        "string type" [ "glass" ]
+        "string reflectance" [ "6(KBS4724D1)-12A-6" ]
+        "float reflectivity"         [ 0.23 ]
+        "float transmissivity"         [ 0.48 ]
+
+
+
+# 中性灰高透单银Low-E中空玻璃
+Texture "6CAVS_S1-12A-6" "spectrum" "const"
+        "float rgb" [ 0.929412 0.952941 0.941176 ]
+MakeNamedMaterial "6CAVS_S1-12A-6"
+        "string type" [ "glass" ]
+        "string reflectance" [ "6CAVS_S1-12A-6" ]
+        "float reflectivity"         [ 0.12 ]
+        "float transmissivity"         [ 0.73 ]
+
+
+
+# 中空夹胶超白玻(8+8+12A+12)YX-01
+# cb(8-8(cen03-56)-12a-12)
+
+
+# 双层中空夹胶超白玻
+Texture "YYHY-CBB-1" "spectrum" "const"
+        "float rgb" [ 0.980392 0.980392 0.980392 ]
+MakeNamedMaterial "YYHY-CBB-1"
+        "string type" [ "glass" ]
+        "string reflectance" [ "YYHY-CBB-1" ]
+        "float reflectivity"         [ 0.10 ]
+        "float transmissivity"         [ 0.91 ]
+
+
+# 暗灰低透三银Low-E中空玻璃
+Texture "6KNG4121T1-12A-6" "spectrum" "const"
+        "float rgb" [ 0.709804 0.831373 0.823529 ]
+MakeNamedMaterial "6KNG4121T1-12A-6"
+        "string type" [ "glass" ]
+        "string reflectance" [ "6KNG4121T1-12A-6" ]
+        "float reflectivity"         [ 0.14 ]
+        "float transmissivity"         [ 0.41 ]
+
+
+# 夹胶超白玻(8+8)YX-01
+# cb(8(cst059)-8)
+
+# 浅蓝灰中透双银Low-E中空玻璃
+Texture "6KLB5930D1-12A-6" "spectrum" "const"
+        "float rgb" [ 0.772549 0.882353 0.831373 ]
+MakeNamedMaterial "6KLB5930D1-12A-6"
+        "string type" [ "glass" ]
+        "string reflectance" [ "6KLB5930D1-12A-6" ]
+        "float reflectivity"         [ 0.16 ]
+        "float transmissivity"         [ 0.59 ]
+
+
+# 浅灰中透双银Low-E中空玻璃
+Texture "6KBS5229D1-12A-6" "spectrum" "const"
+        "float rgb" [ 0.525490 0.584314 0.517647 ]
+MakeNamedMaterial "6KBS5229D1-12A-6"
+        "string type" [ "glass" ]
+        "string reflectance" [ "6KBS5229D1-12A-6" ]
+        "float reflectivity"         [ 0.15 ]
+        "float transmissivity"         [ 0.53 ]
+
+
+# 蓝色热反射镀膜单片玻璃
+Texture "6_SR148" "spectrum" "const"
+        "float rgb" [ 0.462745 0.580392 0.666667 ]
+MakeNamedMaterial "6_SR148"
+        "string type" [ "glass" ]
+        "string reflectance" [ "6_SR148" ]
+        "float reflectivity"         [ 0.17 ]
+        "float transmissivity"         [ 0.50 ]
+
+
+# 浅蓝色中透单银Low-E中空玻璃
+Texture "6CAVS_S3-12A-6" "spectrum" "const"
+        "float rgb" [ 0.666667 0.796078 0.772549 ]
+MakeNamedMaterial "6CAVS_S3-12A-6"
+        "string type" [ "glass" ]
+        "string reflectance" [ "6CAVS_S3-12A-6" ]
+        "float reflectivity"         [ 0.21 ]
+        "float transmissivity"         [ 0.54 ]
+
+
+# 蓝色低透双银Low-E中空玻璃
+Texture "6KDB4323D1-12A-6" "spectrum" "const"
+        "float rgb" [ 0.705882 0.854902 0.882353 ]
+MakeNamedMaterial "6KDB4323D1-12A-6"
+        "string type" [ "glass" ]
+        "string reflectance" [ "6KDB4323D1-12A-6" ]
+        "float reflectivity"         [ 0.19 ]
+        "float transmissivity"         [ 0.43 ]
+
+
+# 蓝灰色低透Low-E中空玻璃1
+Texture "6C(XD30301)_2-12A-6C" "spectrum" "const"
+        "float rgb" [ 0.396078 0.423529 0.454902 ]
+MakeNamedMaterial "6C(XD30301)_2-12A-6C"
+        "string type" [ "glass" ]
+        "string reflectance" [ "6C(XD30301)_2-12A-6C" ]
+        "float reflectivity"         [ 0.16 ]
+        "float transmissivity"         [ 0.40 ]
+
+
+# 浅灰低透Low-E中空玻璃ANJ01
+Texture "ANJU-BL-8(KBS4724D)_2-12A-8" "spectrum" "const" 
+    "float rgb" [ 0.729412 0.815686 0.776471 ]
+MakeNamedMaterial "ANJU-BL-8(KBS4724D)_2-12A-8"
+    "string type" [ "glass"]
+    "string reflectance" [ "ANJU-BL-8(KBS4724D)_2-12A-8"]
+    "float reflectivity"   [ 0.230000 ]
+    "float transmissivity" [ 0.450000 ]
+
+
+
+# 蓝灰中透Low-E中空玻璃ANJ01
+Texture "ANJU-BL-8(KNG6437D)_2-12A-8" "spectrum" "const" 
+    "float rgb" [ 0.780392 0.843137 0.772549 ]
+MakeNamedMaterial "ANJU-BL-8(KNG6437D)_2-12A-8"
+    "string type" [ "glass"]
+    "string reflectance" [ "ANJU-BL-8(KNG6437D)_2-12A-8"]
+    "float reflectivity"   [ 0.110000 ]
+    "float transmissivity" [ 0.620000 ]
+
+
+# 银灰色低透双银Low-E中空玻璃
+Texture "6KDB4525-12A-6" "spectrum" "const"
+        "float rgb" [ 0.890196 0.952941 0.854902 ]
+MakeNamedMaterial "6KDB4525-12A-6"
+        "string type" [ "glass" ]
+        "string reflectance" [ "6KDB4525-12A-6" ]
+        "float reflectivity"         [ 0.28 ]
+        "float transmissivity"         [ 0.44 ]
+
+
+# 灰色热反射镀膜单片玻璃
+Texture "6_SR135" "spectrum" "const"
+        "float rgb" [ 0.270588 0.388235 0.423529 ]
+MakeNamedMaterial "6_SR135"
+        "string type" [ "glass" ]
+        "string reflectance" [ "6_SR135" ]
+        "float reflectivity"         [ 0.20 ]
+        "float transmissivity"         [ 0.41 ]
+
+
+# 浅灰高透双银Low-E中空玻璃
+Texture "6KNG6437D1-12A-6" "spectrum" "const"
+        "float rgb" [ 0.937255 0.945098 0.909804 ]
+MakeNamedMaterial "6KNG6437D1-12A-6"
+        "string type" [ "glass" ]
+        "string reflectance" [ "6KNG6437D1-12A-6" ]
+        "float reflectivity"         [ 0.11 ]
+        "float transmissivity"         [ 0.64 ]
+
+
+# 蓝灰色低透单银Low-E中空玻璃
+Texture "6CAVS_S5-12A-6" "spectrum" "const"
+        "float rgb" [ 0.882353 1.000000 1.000000 ]
+MakeNamedMaterial "6CAVS_S5-12A-6"
+        "string type" [ "glass" ]
+        "string reflectance" [ "6CAVS_S5-12A-6" ]
+        "float reflectivity"         [ 0.30 ]
+        "float transmissivity"         [ 0.45 ]
+
+
+# 蓝灰色钢化夹胶玻璃ANJ01
+Texture "ANJU-BL-8(KSR135)_2-PVB152-8" "spectrum" "const" 
+    "float rgb" [ 0.592157 0.682353 0.682353 ]
+MakeNamedMaterial "ANJU-BL-8(KSR135)_2-PVB152-8"
+    "string type" [ "glass"]
+    "string reflectance" [ "ANJU-BL-8(KSR135)_2-PVB152-8"]
+    "float reflectivity"   [ 0.200000 ]
+    "float transmissivity" [ 0.390000 ]
+
+
+# 低透明度Low-E中空白玻
+Texture "6C(XYG-XDDG-868019)_2-12A-6C" "spectrum" "const"
+        "float rgb" [ 0.929412 0.952941 0.941176 ]
+MakeNamedMaterial "6C(XYG-XDDG-868019)_2-12A-6C"
+        "string type" [ "glass" ]
+        "string reflectance" [ "6C(XYG-XDDG-868019)_2-12A-6C" ]
+        "float reflectivity"         [ 0.01 ]
+        "float transmissivity"         [ 0.42 ]
+
+
+
+
+
+
+
+

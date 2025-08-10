@@ -1,0 +1,18 @@
+#ifndef COMPILECONFIG
+#define COMPILECONFIG
+
+#define USE_HDR 0
+#define USE_EXR 1
+#define HDRFORMAT USE_EXR 
+
+#define ENV_LIGHTING
+//#define SUN_LIGHTING
+//#define ENABLE_LIGHTING
+
+#define SUPPORT_NORMALMAP
+
+
+#define FOR_MESHINSTANCE_
+
+
+#endif

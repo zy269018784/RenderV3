@@ -1,0 +1,16 @@
+Include "material/Ceramic/ceramic.pbrt"
+Include "material/Coating/coatings.pbrt"
+Include "material/Glass/glass.pbrt"
+Include "material/Metal/metal.pbrt"
+Include "material/Stone/stone.pbrt"
+Include "material/Tiles/tiles.pbrt"
+
+
+
+# 石材	5		OK
+# 面砖	10		OK
+# 涂料  16		OK
+# 玻璃  23		差2款
+# 陶瓷  29		OK
+# 金属  57		OK
+

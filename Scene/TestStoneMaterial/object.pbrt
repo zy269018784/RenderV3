@@ -1,0 +1,28 @@
+AttributeBegin
+	Scale -1 1 1
+	ObjectBegin "back_1"
+		NamedMaterial "brick_wall"
+		ShapeRef "back_1"
+	ObjectEnd
+	ObjectBegin "front_1"
+		NamedMaterial "ANJU-SC-01-YDH"
+		#NamedMaterial "glass"
+		ShapeRef "front_1"
+	ObjectEnd
+	ObjectBegin "left_1"
+		NamedMaterial "brick_wall"
+		ShapeRef "left_1"
+	ObjectEnd
+	ObjectBegin "right_1"
+		NamedMaterial "brick_wall"
+		ShapeRef "right_1"
+	ObjectEnd
+	ObjectBegin "top_1"
+		NamedMaterial "brick_wall"
+		ShapeRef "top_1"
+	ObjectEnd
+	ObjectBegin "bottom_1"
+		NamedMaterial "brick_wall"
+		ShapeRef "bottom_1"
+	ObjectEnd
+AttributeEnd

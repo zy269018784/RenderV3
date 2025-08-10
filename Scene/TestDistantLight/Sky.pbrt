@@ -1,0 +1,7 @@
+#Texture "HDR_TEXTURE" "spectrum" "imagemap"
+#	"string filename" "sky/table_mountain_2_puresky_8k.exr"
+#LightSource "hdr"
+#	"float power" [1]
+#	"string reflectance" "HDR_TEXTURE"
+#	"float phi" [90]
+#	"float theta" [0]

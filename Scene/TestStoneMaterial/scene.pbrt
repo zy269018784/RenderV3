@@ -1,0 +1,18 @@
+Include "TestStoneMaterial/camera.pbrt"
+Include "TestStoneMaterial/light.pbrt"
+Include "TestStoneMaterial/material.pbrt"
+Include "material/material.pbrt"
+
+Include "TestStoneMaterial/shape.pbrt"
+Include "TestStoneMaterial/object.pbrt"
+Include "TestStoneMaterial/instance.pbrt"
+Include "TestStoneMaterial/sky.pbrt"
+
+Integrator "test"
+Film "rgb"
+	"string filename" [ "glass.png" ]
+	"integer xresolution" [ 1920 ]
+	"integer yresolution" [ 1080 ]
+	
+	
+

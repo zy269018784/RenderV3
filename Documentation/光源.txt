@@ -1,0 +1,51 @@
+点光源
+	LightSource "point"
+        "point3 from" [ 0         0          0 ]
+        "point3 to"   [ 0        -100        0 ]
+        "float power" [ 1 ]
+        "float range" [ 99 ]
+        "float rgb"   [ 1 1 1  ]   
+	
+方向光
+	LightSource "distant"
+        "point3 from" 	[ 0 1 1 ]
+        "point3 to"   	[ 0 0 0 ]
+        "float power" 	[ 0.1 ]
+        "float rgb" 	[ 1 1 1 ]   
+
+聚光灯
+LightSource "spot"
+        "point3 from"                [ 0         50                0 ]
+        "point3 to"                  [ 0         0                0 ]
+        "float coneangle"            [ 120 ]
+        "float conedeltaangle"       [ 10 ]
+        "float range"                [ 120 ]                
+        "float power"                [ 10 ]                
+        "float rgb"                  [ 1 1 1 ] 
+
+面光源
+	LightSource "area"
+		"string reflectance"         [ "green" ]
+		"string object"              [ "AreaLight1" ]
+		"bool twoSided"              [ false ]        
+		"float power"                [ 10 ]                
+			
+LightSampleContext:
+	光照点位置
+			
+LightLiSample PointLight::SampleLi(LightSampleContext ctx, Point2f u, SampledWavelengths lambda, bool allowIncompletePDF)						 
+        
+		
+		
+面光源:
+	面光源与网格关联, 一个网格有许多个三角形组成, 一个三角形作为一个面光源, 构成光源, 通过采样其中一个面光源,得到对应三角形, 
+在通过三角形采样,得到三角形上的一点.
+	
+多光源采样:
+			
+		
+               
+        
+        
+             
+                

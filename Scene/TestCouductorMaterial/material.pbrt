@@ -1,0 +1,89 @@
+Texture "white" "spectrum" "const"
+        "float rgb" [ 1 1 1 ]
+		
+Texture "green" "spectrum" "const"
+        "float rgb" [ 0 1 0]
+		
+Texture "wood" "spectrum" "imagemap"
+    "string filename" [ "TestCouductorMaterial/textures/wood.jpg" ]		
+		
+Texture "wood1" "spectrum" "imagemap"
+    "string filename" [ "TestCouductorMaterial/textures/wood.jpg" ]	
+
+Texture "wood2" "spectrum" "imagemap"
+    "string filename" [ "TestCouductorMaterial/textures/wood.jpg" ]
+
+Texture "nor1" "spectrum" "imagemap"
+    "string filename" [ "TestCouductorMaterial/textures/wood_stone_pathway_nor_gl_4k.jpg" ]	
+
+Texture "brick_wall" "spectrum" "imagemap"
+    "string filename" [ "TestCouductorMaterial/textures/brick_wall_006_diff_2k.jpg" ]	
+
+MakeNamedMaterial "brick_wall"
+	"string type" [ "diffuse" ]
+	"string reflectance" [ "brick_wall" ]
+
+MakeNamedMaterial "wood"
+	"string type" [ "diffuse" ]
+	"string reflectance" [ "wood" ]
+
+MakeNamedMaterial "glass"
+	"string type" [ "glass" ]
+	"string reflectance" [ "white" ]
+	#"string normalmap" [ "nor1" ]
+	"float reflectivity"         [ 0.5 ]
+	"float transmissivity"       [ 0.5 ]
+	
+MakeNamedMaterial "glass2"
+	"string type" [ "glass" ]
+	"string reflectance" [ "wood1" ]
+	"float reflectivity"         [ 0.5 ]
+	"float transmissivity"       [ 0.5 ]
+	
+MakeNamedMaterial "glass3"
+	"string type" [ "glass" ]
+	"string reflectance" [ "wood2" ]
+	"float reflectivity"         [ 0.5 ]
+	"float transmissivity"       [ 0.5 ]
+
+MakeNamedMaterial "glass4"
+	"string type" [ "glass" ]
+	"string reflectance" [ "green" ]
+	"float reflectivity"         [ 0.5 ]
+	"float transmissivity"       [ 0.5 ]	
+
+# 中性灰高透三银Low-E中空玻璃
+Texture "6KNG6025T-12A-6" "spectrum" "const"
+        "float rgb" [ 0.874510 0.937255 0.898039 ]
+MakeNamedMaterial "6KNG6025T-12A-6"
+        "string type" [ "glass" ]
+        "string reflectance" [ "6KNG6025T-12A-6" ]
+        "float reflectivity"         [ 0.11 ]
+        "float transmissivity"         [ 0.61 ]
+		
+# 蓝灰色低透Low-E中空玻璃2
+Texture "8C(XD30301)_2-12A-8C" "spectrum" "const"
+        "float rgb" [ 0.396078 0.423529 0.450980 ]
+MakeNamedMaterial "8C(XD30301)_2-12A-8C"
+        "string type" [ "glass" ]
+        "string reflectance" [ "8C(XD30301)_2-12A-8C" ]
+        "float reflectivity"         [ 0.16 ]
+        "float transmissivity"         [ 0.40 ]		
+
+
+Texture "ANJU-LHJ-02" "spectrum" "const" 
+    "float rgb" [ 0.337255 0.349020 0.345098 ]
+MakeNamedMaterial "ANJU-LHJ-02"
+    "string type" [ "conductor"]
+    "string reflectance" [ "ANJU-LHJ-02"]
+    "float uroughness" 0.940000
+    "float vroughness" 0.940000
+	
+Texture "TSD_629-91119" "spectrum" "const" 
+    "float rgb" [ 0.403922 0.403922 0.372549 ]
+	
+MakeNamedMaterial "TSD_629-91119"
+    "string type" [ "conductor"]
+    "string reflectance" [ "TSD_629-91119"]
+    "float uroughness" 0.160000
+    "float vroughness" 0.160000	

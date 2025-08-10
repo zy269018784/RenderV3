@@ -1,0 +1,7 @@
+start: 盘符d 路径p 文件名n 扩展名x
+D:\VulkanSDK\1.3.290.0\Bin\glslangValidator.exe --target-env vulkan1.2 E:\Work\project\global-illumination-dev\RenderV3_build\asset\shaders\rtscene\rtscene.rgen -o rtscene_rgs.spv 
+D:\VulkanSDK\1.3.290.0\Bin\glslangValidator.exe --target-env vulkan1.2 E:\Work\project\global-illumination-dev\RenderV3_build\asset\shaders\rtscene\rtscene.rmiss -o rtscene_rms.spv 
+D:\VulkanSDK\1.3.290.0\Bin\glslangValidator.exe --target-env vulkan1.2 E:\Work\project\global-illumination-dev\RenderV3_build\asset\shaders\rtscene\shadow.rmiss -o shadow_rms.spv 
+D:\VulkanSDK\1.3.290.0\Bin\glslangValidator.exe --target-env vulkan1.2 E:\Work\project\global-illumination-dev\RenderV3_build\asset\shaders\rtscene\rtscene.rchit -o rtscene_rhs.spv 
+D:\VulkanSDK\1.3.290.0\Bin\glslangValidator.exe --target-env vulkan1.2 E:\Work\project\global-illumination-dev\RenderV3_build\asset\shaders\rtscene\rtscene.rahit -o rtscene_ras.spv 
+D:\VulkanSDK\1.3.290.0\Bin\glslangValidator.exe --target-env vulkan1.2 E:\Work\project\global-illumination-dev\RenderV3_build\asset\shaders\rtscene\shadow.rahit -o shadow_ras.spv 

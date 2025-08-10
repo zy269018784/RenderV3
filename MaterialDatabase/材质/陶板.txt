@@ -1,0 +1,11 @@
+## 陶板
+ANJU-TB-WHITE00 >>>>>> 米白色陶板AJ-01
+ANJU-TB-WHITE01 >>>>>> 米白色陶板AJ-02
+ANJU-TZ-RED00 >>>>>> 红色陶砖AJ-01
+ANJU-TZ-RED01 >>>>>> 红色陶砖AJ-02
+ANJU-TZ-WHITE01 >>>>>> 米白色陶砖AJ-02
+ceramic-hede-ccm-jtz-00 >>>>>> 和特粗糙面焦糖棕
+ceramic-hede-ym-lh-00 >>>>>> 和特釉面梨黄
+ceramic-hede-ym-mwz-00 >>>>>> 和特釉面迷雾棕
+ceramic-hede-zrm-jgz-00 >>>>>> 和特自然面坚果棕
+ceramic-hede-zrm-xyz-00 >>>>>> 和特自然面橡叶棕

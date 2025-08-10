@@ -1,0 +1,184 @@
+1. 查看显卡型号
+lspci | grep -i vga
+
+#----output------
+65:00.0 VGA compatible controller: NVIDIA Corporation AD103 [GeForce RTX 4080] (rev a1)
+ 
+2. 查看AD103显卡
+http://pci-ids.ucw.cz/mods/PC/10de?action=help?help=pci
+
+
+ID						Name												Parent
+PCI device 10de:2702	AD103 [GeForce RTX 4080 SUPER]						NVIDIA Corporation
+PCI device 10de:2703	AD103 [GeForce RTX 4080 SUPER]						NVIDIA Corporation
+PCI device 10de:2704	AD103 [GeForce RTX 4080]							NVIDIA Corporation
+PCI device 10de:2705	AD103 [GeForce RTX 4070 Ti SUPER]					NVIDIA Corporation
+PCI device 10de:2709	AD103 [GeForce RTX 4070]							NVIDIA Corporation
+PCI device 10de:2717	AD103M / GN21-X11 [GeForce RTX 4090 Laptop GPU]		NVIDIA Corporation
+PCI device 10de:2730	AD103GLM [RTX 5000 Ada Generation Laptop GPU]		NVIDIA Corporation
+PCI device 10de:2757	AD103M / GN21-X11 [GeForce RTX 4090 Laptop GPU]		NVIDIA Corporation
+PCI device 10de:2770	AD103GLM [RTX 5000 Ada Generation Embedded GPU]		NVIDIA Corporation
+
+3. 提示要装nvidia-smi
+root@dtr-X11DPi-N-T:~# nvidia-smi
+Command 'nvidia-smi' not found, but can be installed with:
+apt install nvidia-utils-470         # version 470.256.02-0ubuntu0.24.04.1, or
+apt install nvidia-utils-470-server  # version 470.256.02-0ubuntu0.24.04.1
+apt install nvidia-utils-535         # version 535.183.01-0ubuntu0.24.04.1
+apt install nvidia-utils-535-server  # version 535.230.02-0ubuntu0.24.04.3
+apt install nvidia-utils-550         # version 550.120-0ubuntu0.24.04.1
+apt install nvidia-utils-570-server  # version 570.86.15-0ubuntu0.24.04.4
+apt install nvidia-utils-525         # version 525.147.05-0ubuntu1
+apt install nvidia-utils-525-server  # version 525.147.05-0ubuntu1
+apt install nvidia-utils-565-server  # version 565.57.01-0ubuntu0.24.04.3
+apt install nvidia-utils-550-server  # version 550.144.03-0ubuntu0.24.04.1
+
+4. 安装nvidia-smi
+apt install nvidia-utils-535 
+
+
+5. nvidia-smi提示要装驱动
+NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running.
+
+6.安装Nvdia显卡驱动
+	Nvdia显卡Linux驱动下载地址:https://download.nvidia.com/XFree86/Linux-x86_64/
+
+方式1: 官方脚本手动安装
+	wget https://download.nvidia.com/XFree86/Linux-x86_64/555.58/NVIDIA-Linux-x86_64-555.58.run
+	chmod +x NVIDIA-Linux-x86_64-555.58.run
+	sudo ./NVIDIA-Linux-x86_64-555.58.run
+
+方式2: 自动安装
+	ubuntu-drivers autoinstall
+	
+方式3: 手动安装
+	ubuntu-drivers list
+		nvidia-driver-535, (kernel modules provided by linux-modules-nvidia-535-generic-hwe-24.04)
+		nvidia-driver-570-open, (kernel modules provided by linux-modules-nvidia-570-open-generic-hwe-24.04)
+		nvidia-driver-570-server-open, (kernel modules provided by linux-modules-nvidia-570-server-open-generic-hwe-24.04)
+		nvidia-driver-550, (kernel modules provided by linux-modules-nvidia-550-generic-hwe-24.04)
+		nvidia-driver-535-open, (kernel modules provided by linux-modules-nvidia-535-open-generic-hwe-24.04)
+		nvidia-driver-550-open, (kernel modules provided by linux-modules-nvidia-550-open-generic-hwe-24.04)
+		nvidia-driver-535-server-open, (kernel modules provided by linux-modules-nvidia-535-server-open-generic-hwe-24.04)
+		nvidia-driver-570, (kernel modules provided by linux-modules-nvidia-570-generic-hwe-24.04)
+		nvidia-driver-570-server, (kernel modules provided by linux-modules-nvidia-570-server-generic-hwe-24.04)
+		nvidia-driver-535-server, (kernel modules provided by linux-modules-nvidia-535-server-generic-hwe-24.04)
+	apt install nvidia-driver-535
+	
+7. 禁用nouveau	
+# 打开黑名单配置文件
+sudo vim /etc/modprobe.d/blacklist.conf
+# 文件末尾添加一下两行代码，保存并关闭
+blacklist nouveau
+options nouveau modeset=0
+# 更新内核，并重启生效
+sudo update-initramfs -u
+reboot
+# 确认是否已禁用--没有输出即为生效
+lsmod | grep nouveau	
+
+=======================================================================================================================================================
+安装cuda
+wget https://developer.download.nvidia.com/compute/cuda/12.8.0/local_installers/cuda_12.8.0_570.86.10_linux.run
+sudo sh cuda_12.8.0_570.86.10_linux.run
+
+chomd a+x cuda_12.8.0_570.86.10_linux.run 
+./cuda_12.8.0_570.86.10_linux.run 
+===========
+= Summary =
+===========
+
+Driver:   Not Selected
+Toolkit:  Installed in /usr/local/cuda-12.8/
+
+Please make sure that
+ -   PATH includes /usr/local/cuda-12.8/bin
+ -   LD_LIBRARY_PATH includes /usr/local/cuda-12.8/lib64, or, add /usr/local/cuda-12.8/lib64 to /etc/ld.so.conf and run ldconfig as root
+
+To uninstall the CUDA Toolkit, run cuda-uninstaller in /usr/local/cuda-12.8/bin
+***WARNING: Incomplete installation! This installation did not install the CUDA Driver. A driver of version at least 570.00 is required for CUDA 12.8 functionality to work.
+To install the driver using this installer, run the following command, replacing <CudaInstaller> with the name of this run file:
+    sudo <CudaInstaller>.run --silent --driver
+
+Logfile is /var/log/cuda-installer.log
+
+
+在/etc/bash.bashrc文件中添加如下环境变量：
+    export PATH=/usr/local/cuda-12.8/bin:$PATH
+    export LD_LIBRARY_PATH=/usr/local/cuda-12.8/lib64:$LD_LIBRARY_PATH
+
+查看nvcc
+source /etc/bash.bashrc
+nvcc -v
+
+cuda 路径
+/usr/local/cuda-12.8
+=======================================================================================================================================================
+安装Vulkan:
+	lsb_release -a
+		No LSB modules are available.
+		Distributor ID:	Ubuntu
+		Description:	Ubuntu 24.04.2 LTS
+		Release:	24.04
+		Codename:	noble
+
+
+	安装Vulkan( Ubuntu 24.04 (Noble Numbat) ):
+	wget -qO - https://packages.lunarg.com/lunarg-signing-key-pub.asc | sudo apt-key add -
+	sudo wget -qO /etc/apt/sources.list.d/lunarg-vulkan-1.4.313-noble.list https://packages.lunarg.com/vulkan/1.4.313/lunarg-vulkan-1.4.313-noble.list
+	sudo apt update
+	sudo apt install vulkan-sdk
+
+	查看Vulkan安装成功:
+	ls /usr/include/vulkan/
+	layer                    vulkan_beta.h                    vulkan_fuchsia.h    vulkan_hpp_macros.hpp  vulkan_screen.h               vulkan_wayland.h
+	utility                  vulkan_core.h                    vulkan_funcs.hpp    vulkan_ios.h           vulkan_shared.hpp             vulkan_win32.h
+	vk_enum_string_helper.h  vulkan.cppm                      vulkan_ggp.h        vulkan_macos.h         vulkan_static_assertions.hpp  vulkan_xcb.h
+	vk_icd.h                 vulkan_directfb.h                vulkan.h            vulkan_metal.h         vulkan_structs.hpp            vulkan_xlib.h
+	vk_layer.h               vulkan_enums.hpp                 vulkan_handles.hpp  vulkan_profiles.h      vulkan_to_string.hpp          vulkan_xlib_xrandr.h
+	vk_platform.h            vulkan_extension_inspection.hpp  vulkan_hash.hpp     vulkan_profiles.hpp    vulkan_video.hpp
+	vulkan_android.h         vulkan_format_traits.hpp         vulkan.hpp          vulkan_raii.hpp        vulkan_vi.h
+
+
+	ls /usr/lib/x86_64-linux-gnu/*vulkan*
+	/usr/lib/x86_64-linux-gnu/libvulkan_intel_hasvk.so  /usr/lib/x86_64-linux-gnu/libvulkan_nouveau.so  /usr/lib/x86_64-linux-gnu/libvulkan.so.1
+	/usr/lib/x86_64-linux-gnu/libvulkan_intel.so        /usr/lib/x86_64-linux-gnu/libvulkan_radeon.so   /usr/lib/x86_64-linux-gnu/libvulkan.so.1.4.313
+	/usr/lib/x86_64-linux-gnu/libvulkan_lvp.so          /usr/lib/x86_64-linux-gnu/libvulkan.so          /usr/lib/x86_64-linux-gnu/libvulkan_virtio.so
+
+
+
+=======================================================================================================================================================
+
+查看内核版本
+uname -a
+Linux dtr-X11DPi-N-T 6.11.0-26-generic #26~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Thu Apr 17 19:20:47 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+
+
+查看显卡驱动版本
+cat /proc/driver/nvidia/version
+
+查看CUDA版本
+cat /usr/local/cuda/version.txt 
+nvcc -V
+
+卸载显卡驱动
+sudo apt-get remove --purge nvidia*
+sudo /usr/bin/nvidia-uninstall
+
+卸载CUDA方式1
+sudo /usr/local/cuda-10.2/bin/uninstall_cuda_10.2.pl
+
+卸载CUDA方式2
+cd /usr/local/cuda-10.2/bin
+sudo cuda-uninstaller
+
+
+
+
+
+
+
+
+
+
+

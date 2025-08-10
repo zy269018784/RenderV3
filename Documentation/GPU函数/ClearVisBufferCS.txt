@@ -1,0 +1,33 @@
+ClearVisBufferCS:
+	线程组大小为4x4x4x6.
+	
+	Tile 由 4x4x4 Voxel:
+		define VIS_BUFFER_TILE_SIZE 4
+	
+	获取UpdateTileBuffer 索引:
+		uint UpdateTileIndex = GroupId.x;
+	获取PackedUpdateTile:
+		uint PackedUpdateTile = UpdateTileBuffer[UpdateTileIndex];
+
+	获取UpdateTileCoord:
+		uint3 UpdateTileCoord;
+		UpdateTileCoord.x = PackedUpdateTile & 0xFF;
+		UpdateTileCoord.y = (PackedUpdateTile >> 8) & 0xFF;
+		UpdateTileCoord.z = (PackedUpdateTile >> 16) & 0xFF;
+
+	
+	uint3 VoxelCoordOffset;
+	VoxelCoordOffset.x = GroupThreadId.x;
+	VoxelCoordOffset.y = GroupThreadId.y;
+	VoxelCoordOffset.z = GroupThreadId.z % VIS_BUFFER_TILE_SIZE;
+
+	// 获取DirectionIndex
+	uint DirectionIndex = GroupThreadId.z / VIS_BUFFER_TILE_SIZE;
+	
+	
+	// 获取Voxel坐标
+	uint3 VoxelCoord = UpdateTileCoord * VIS_BUFFER_TILE_SIZE + VoxelCoordOffset;
+	
+	// 获取RWVoxelVisBuffer 索引
+	uint VisBufferCoord = VoxelCoordToVisBufferCoord(ClipmapIndex, VoxelCoord, DirectionIndex);
+	RWVoxelVisBuffer[VisBufferCoord] = VIS_BUFFER_CLEAR;

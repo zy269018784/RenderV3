@@ -1,0 +1,28 @@
+AttributeBegin
+	Scale -1 1 1
+	Translate 100 0 0
+	ObjectBegin "back_1"
+		NamedMaterial "glass1"
+		ShapeRef "back_1"
+	ObjectEnd
+	ObjectBegin "front_1"
+		NamedMaterial "glass1"
+		ShapeRef "front_1"
+	ObjectEnd
+	ObjectBegin "left_1"
+		NamedMaterial "glass2"
+		ShapeRef "left_1"
+	ObjectEnd
+	ObjectBegin "right_1"
+		NamedMaterial "glass2"
+		ShapeRef "right_1"
+	ObjectEnd
+	ObjectBegin "top_1"
+		NamedMaterial "glass2"
+		ShapeRef "top_1"
+	ObjectEnd
+	ObjectBegin "bottom_1"
+		NamedMaterial "glass2"
+		ShapeRef "bottom_1"
+	ObjectEnd
+AttributeEnd

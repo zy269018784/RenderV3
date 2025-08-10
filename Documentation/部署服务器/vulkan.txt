@@ -1,0 +1,71 @@
+安装开发工具
+sudo apt install vulkan-headers libvulkan-dev
+
+安装sdk
+方法一：通过官方仓库查询（推荐）
+
+# 添加LunarG官方仓库（获取最新版本）
+wget -qO - https://packages.lunar.computer/lunarg-signing-key-pub.asc | sudo tee /etc/apt/trusted.gpg.d/lunar.asc
+sudo wget -qO /etc/apt/sources.list.d/lunar.list https://packages.lunar.computer/lunarubuntu.list
+
+# 更新仓库并查看可用版本
+sudo apt update
+apt list -a vulkan-sdk
+
+# 检查LunarG仓库是否已正确配置（必须包含jammy源）
+grep -r 'lunarg' /etc/apt/sources.list.d/
+
+# 使用aptitude处理复杂版本匹配（需先安装）
+sudo apt install aptitude
+
+# 精确安装候选版本（转义特殊字符）
+sudo aptitude install vulkan-sdk=1.4.3.4.0~rc1-1lunarg22.04.1
+
+# 检查SDK版本
+vulkaninfo --summary | grep "SDK Version"
+
+# 检查工具链完整性
+glslc --version  # 需显示对应版本
+
+
+=======================================================================================================================================================
+24.04安装Vulkan:
+	lsb_release -a
+		No LSB modules are available.
+		Distributor ID:	Ubuntu
+		Description:	Ubuntu 24.04.2 LTS
+		Release:	24.04
+		Codename:	noble
+
+
+	安装Vulkan( Ubuntu 24.04 (Noble Numbat) ):
+	wget -qO - https://packages.lunarg.com/lunarg-signing-key-pub.asc | sudo apt-key add -
+	sudo wget -qO /etc/apt/sources.list.d/lunarg-vulkan-1.4.313-noble.list https://packages.lunarg.com/vulkan/1.4.313/lunarg-vulkan-1.4.313-noble.list
+	sudo apt update
+	sudo apt install vulkan-sdk
+	
+	
+22.04安装Vulkan:	
+	wget -qO- https://packages.lunarg.com/lunarg-signing-key-pub.asc | sudo tee /etc/apt/trusted.gpg.d/lunarg.asc
+	sudo wget -qO /etc/apt/sources.list.d/lunarg-vulkan-1.3.239-jammy.list https://packages.lunarg.com/vulkan/1.3.239/lunarg-vulkan-1.3.239-jammy.list
+	sudo apt update
+	sudo apt install vulkan-sdk
+=======================================================================================================================================================	
+	查看Vulkan安装成功:
+	ls /usr/include/vulkan/
+	layer                    vulkan_beta.h                    vulkan_fuchsia.h    vulkan_hpp_macros.hpp  vulkan_screen.h               vulkan_wayland.h
+	utility                  vulkan_core.h                    vulkan_funcs.hpp    vulkan_ios.h           vulkan_shared.hpp             vulkan_win32.h
+	vk_enum_string_helper.h  vulkan.cppm                      vulkan_ggp.h        vulkan_macos.h         vulkan_static_assertions.hpp  vulkan_xcb.h
+	vk_icd.h                 vulkan_directfb.h                vulkan.h            vulkan_metal.h         vulkan_structs.hpp            vulkan_xlib.h
+	vk_layer.h               vulkan_enums.hpp                 vulkan_handles.hpp  vulkan_profiles.h      vulkan_to_string.hpp          vulkan_xlib_xrandr.h
+	vk_platform.h            vulkan_extension_inspection.hpp  vulkan_hash.hpp     vulkan_profiles.hpp    vulkan_video.hpp
+	vulkan_android.h         vulkan_format_traits.hpp         vulkan.hpp          vulkan_raii.hpp        vulkan_vi.h
+
+
+	ls /usr/lib/x86_64-linux-gnu/*vulkan*
+	/usr/lib/x86_64-linux-gnu/libvulkan_intel_hasvk.so  /usr/lib/x86_64-linux-gnu/libvulkan_nouveau.so  /usr/lib/x86_64-linux-gnu/libvulkan.so.1
+	/usr/lib/x86_64-linux-gnu/libvulkan_intel.so        /usr/lib/x86_64-linux-gnu/libvulkan_radeon.so   /usr/lib/x86_64-linux-gnu/libvulkan.so.1.4.313
+	/usr/lib/x86_64-linux-gnu/libvulkan_lvp.so          /usr/lib/x86_64-linux-gnu/libvulkan.so          /usr/lib/x86_64-linux-gnu/libvulkan_virtio.so
+=======================================================================================================================================================	
+
+

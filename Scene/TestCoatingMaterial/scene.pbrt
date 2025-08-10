@@ -1,0 +1,18 @@
+Include "TestCoatingMaterial/camera.pbrt"
+Include "TestCoatingMaterial/light.pbrt"
+Include "TestCoatingMaterial/material.pbrt"
+Include "material/material.pbrt"
+
+Include "TestCoatingMaterial/shape.pbrt"
+Include "TestCoatingMaterial/object.pbrt"
+Include "TestCoatingMaterial/instance.pbrt"
+Include "TestCoatingMaterial/sky.pbrt"
+
+Integrator "test"
+Film "rgb"
+	"string filename" [ "glass.png" ]
+	"integer xresolution" [ 1920 ]
+	"integer yresolution" [ 1080 ]
+	
+	
+

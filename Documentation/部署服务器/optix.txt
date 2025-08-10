@@ -1,0 +1,17 @@
+1. 下载optix
+wget https://developer.nvidia.com/optix/downloads/7.6.0/NVIDIA-OptiX-SDK-7.4.0-linux64-x86_64.sh
+
+2. 安装
+sh NVIDIA-OptiX-SDK-7.4.0-linux64-x86_64.sh
+sudo cp NVIDIA-OptiX-SDK-7.4.0-linux64-x86_64 /usr/local/ -r 
+
+3. 在/etc/bash.bashrc文件中添加如下环境变量：
+export OptiX_INSTALL_DIR="/usr/local/NVIDIA-OptiX-SDK-7.4.0-linux64-x86_64"
+
+在/etc/profile文件中添加如下环境变量：
+	export PBRT_OPTIX7_PATH=/usr/local/NVIDIA-OptiX-SDK-7.4.0-linux64-x86_64
+	export PATH=${PBRT_OPTIX7_PATH}:$PATH
+
+
+optix安装路径
+/usr/local/NVIDIA-OptiX-SDK-7.4.0-linux64-x86_64 
