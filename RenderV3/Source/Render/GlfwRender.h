@@ -16,7 +16,7 @@
 //#include <Test/HDRLoader.h>
 
 #include <RHI.h>
-#include <VulkanRHI/VulkanObjects/VulkanBuffer.h>
+#include <VulkanRHI1/VulkanObjects/VulkanBuffer.h>
 #include <Scene/Material.h>
 #include <Scene/RtTexture.h>
 #include <Scene/RtInstance.h>

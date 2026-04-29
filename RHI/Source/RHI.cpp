@@ -1,7 +1,7 @@
 #include <RHI.h>
 #include <RHIPixelFormat.h>
 #include <cstdint>
-#include <VulkanRHI/VulkanRHI.h>
+#include <VulkanRHI1/VulkanRHI.h>
 #ifdef USE_QT
 #include <QVulkanWindow>
 

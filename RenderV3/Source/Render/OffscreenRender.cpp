@@ -13,10 +13,10 @@
 #include <set>
 #include <chrono>
 
-#include <VulkanRHI/Vulkan.h>
-#include <VulkanRHI/VulkanRHI.h>
-#include <VulkanRHI/VulkanObjects/VulkanBuffer.h>
-#include <VulkanRHI/VulkanObjects/Texture/VulkanTexture.h>
+#include <VulkanRHI1/Vulkan.h>
+#include <VulkanRHI1/VulkanRHI.h>
+#include <VulkanRHI1/VulkanObjects/VulkanBuffer.h>
+#include <VulkanRHI1/VulkanObjects/Texture/VulkanTexture.h>
 #include <RHIPixelFormat.h>
 #include <RHIShaderBindings.h>
 
