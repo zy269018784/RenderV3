@@ -1,16 +1,7 @@
-//
-// Created by 26901 on 2026/4/29.
-//
+#pragma once
 
-#ifndef RENDER3_RHI_H
-#define RENDER3_RHI_H
-
-
-
-class RHI {
+class RHI
+{
 
 };
 
-
-
-#endif //RENDER3_RHI_H
