@@ -92,7 +92,7 @@ OffscreenRender::~OffscreenRender()
 
 void OffscreenRender::InitRHI()
 {
-    m_pRHI = new VulkanRHI(GpuIndex);
+    m_pRHI = new VulkanRHI1(GpuIndex);
 }
 
 void OffscreenRender::CreateStorageImages()

@@ -20,7 +20,7 @@ set (SRC_PREFIX ${CMAKE_SOURCE_DIR}/Source)
 
 
 #add_subdirectory(${PROJECT_SOURCE_DIR}/../QXlsx QXlsx)
-add_subdirectory(${PROJECT_SOURCE_DIR}/../RHI  RHI)
+add_subdirectory(${PROJECT_SOURCE_DIR}/../RHI2  RHI2)
 add_subdirectory(${PROJECT_SOURCE_DIR}/../Pbrt Pbrt)
 add_subdirectory(${PROJECT_SOURCE_DIR}/../Modules/RHIForQt  RHIForQt)
 
@@ -45,7 +45,7 @@ set (LINK_PATH
 #set(QML2_IMPORT_PATH D:/application/qt6/6.8.0/msvc2022_64/qml)
 
 set (LIBRARYS 
-	RHI
+	RHI2
 	RenderLib
 	RHIForQt
 )

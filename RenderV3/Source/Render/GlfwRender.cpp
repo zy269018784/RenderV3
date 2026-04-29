@@ -142,7 +142,7 @@ void GlfwRender::recreateSwapChain()
 
 void GlfwRender::InitRHI()
 {
-    m_pRHI = new VulkanRHI(window);
+    m_pRHI = new VulkanRHI1(window);
     m_pRHI->GetDevice()->SetupFormats();//预设定像素格式映射
 }
 

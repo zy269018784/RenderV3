@@ -89,7 +89,7 @@ public:
 	/*
 		RHI
 	*/
-	VulkanRHI *m_pRHI = nullptr;
+	VulkanRHI1 *m_pRHI = nullptr;
 	/*
 		VBO
 	*/
