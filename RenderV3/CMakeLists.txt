@@ -8,7 +8,7 @@ set (CMAKE_CXX_STANDARD  17)
 if (${USE_QT})
 	#set (CMAKE_PREFIX_PATH D:/application/qt6/6.8.0/msvc2022_64/lib/cmake)
 	
-	set (CMAKE_PREFIX_PATH C:/Development/Qt6/6.8.3/msvc2022_64/lib/cmake)
+	set (CMAKE_PREFIX_PATH G:/dev_env/PC_Android/Qt6/6.8.3/msvc2022_64/lib/cmake)
 	set (CMAKE_AUTOMOC ON)
 	set (CMAKE_AUTOUIC ON)
 	set (CMAKE_AUTORCC ON)
@@ -18,11 +18,11 @@ endif ()
 
 set (SRC_PREFIX ${CMAKE_SOURCE_DIR}/Source)
 
-
+message(STATUS "CMAKE_SOURCE_DIR ${CMAKE_SOURCE_DIR}")
 #add_subdirectory(${PROJECT_SOURCE_DIR}/../QXlsx QXlsx)
-add_subdirectory(${PROJECT_SOURCE_DIR}/../RHI2  RHI2)
+add_subdirectory(${PROJECT_SOURCE_DIR}/../RHI  RHI)
 add_subdirectory(${PROJECT_SOURCE_DIR}/../Pbrt Pbrt)
-add_subdirectory(${PROJECT_SOURCE_DIR}/../Modules/RHIForQt  RHIForQt)
+
 
 
 
@@ -45,9 +45,8 @@ set (LINK_PATH
 #set(QML2_IMPORT_PATH D:/application/qt6/6.8.0/msvc2022_64/qml)
 
 set (LIBRARYS 
-	RHI2
-	RenderLib
-	RHIForQt
+	RHI
+	RenderLib		
 )
 
 if (CMAKE_SYSTEM_NAME STREQUAL Windows)
